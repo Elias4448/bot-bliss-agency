@@ -20,16 +20,16 @@ export const DotGrid = () => {
       <div
         className="absolute inset-0"
         style={{
-          backgroundImage: `radial-gradient(circle, hsl(220 13% 13% / 0.08) 1.5px, transparent 1.5px)`,
-          backgroundSize: '20px 20px',
+          backgroundImage: `radial-gradient(circle, hsl(220 13% 13% / 0.08) 1px, transparent 1px)`,
+          backgroundSize: '14px 14px',
           opacity: 0.6,
         }}
       />
       <div
         className="absolute inset-0"
         style={{
-          backgroundImage: `radial-gradient(circle, hsl(220 13% 13% / 0.25) 1.5px, transparent 1.5px)`,
-          backgroundSize: '20px 20px',
+          backgroundImage: `radial-gradient(circle, hsl(220 13% 13% / 0.25) 1px, transparent 1px)`,
+          backgroundSize: '14px 14px',
           maskImage: `radial-gradient(circle 250px at ${mousePos.x}px ${mousePos.y}px, black, transparent)`,
           WebkitMaskImage: `radial-gradient(circle 250px at ${mousePos.x}px ${mousePos.y}px, black, transparent)`,
         }}
