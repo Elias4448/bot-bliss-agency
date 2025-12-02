@@ -3,6 +3,11 @@ import { Card } from "@/components/ui/card";
 
 const services = [
   {
+    icon: Lightbulb,
+    title: "Beratung, Konzeption & Implementierung",
+    description: "Wir analysieren Prozesse, definieren Automatisierungspotenziale und entwickeln maßgeschneiderte KI-Lösungen."
+  },
+  {
     icon: Phone,
     title: "KI-Telefonassistenten & Voice-Automation",
     description: "Intelligente KI-Assistenten übernehmen Anrufe, qualifizieren Leads, beantworten Fragen und koordinieren Termine – rund um die Uhr."
@@ -11,11 +16,6 @@ const services = [
     icon: Workflow,
     title: "Workflow-Automatisierung & API-Integration",
     description: "Wir automatisieren wiederkehrende Aufgaben, verbinden Systeme und schaffen reibungslose, effiziente Abläufe."
-  },
-  {
-    icon: Lightbulb,
-    title: "Beratung, Konzeption & Implementierung",
-    description: "Wir analysieren Prozesse, definieren Automatisierungspotenziale und entwickeln maßgeschneiderte KI-Lösungen."
   },
   {
     icon: Server,
