@@ -2,10 +2,8 @@ import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { BackgroundBlobs } from "@/components/BackgroundBlobs";
 import { DotGrid } from "@/components/DotGrid";
-
 const Impressum = () => {
-  return (
-    <div className="relative min-h-screen">
+  return <div className="relative min-h-screen">
       <BackgroundBlobs />
       <DotGrid />
       <Navigation />
@@ -20,7 +18,7 @@ const Impressum = () => {
               <h2 className="text-xl font-semibold mb-4 text-primary">Angaben gemäß § 5 TMG</h2>
               <div className="space-y-1 text-muted-foreground">
                 <p className="font-medium text-foreground">Elias Baumgartner</p>
-                <p>Baumgartner IT Solutions (Einzelunternehmer)</p>
+                <p> Kubrix (Einzelunternehmer)</p>
                 <p>Schivelbeiner Str. 32</p>
                 <p>10439 Berlin</p>
               </div>
@@ -73,8 +71,6 @@ const Impressum = () => {
       </main>
 
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Impressum;
