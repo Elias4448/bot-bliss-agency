@@ -9,7 +9,7 @@ export const Navigation = () => {
             <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center">
               <span className="text-white font-bold text-xl">AI</span>
             </div>
-            <span className="font-bold text-xl hidden sm:inline">AI Agentur</span>
+            <span className="font-bold text-xl hidden sm:inline">Kubrix</span>
           </div>
           
           {/* Desktop Menu */}
