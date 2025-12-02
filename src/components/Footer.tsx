@@ -1,6 +1,5 @@
 export const Footer = () => {
-  return (
-    <footer className="py-12 px-6 border-t border-border/50">
+  return <footer className="py-12 px-6 border-t border-border/50">
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           {/* Brand */}
@@ -9,7 +8,7 @@ export const Footer = () => {
               <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center">
                 <span className="text-white font-bold text-xl">AI</span>
               </div>
-              <span className="font-bold text-xl">AI Agentur</span>
+              <span className="font-bold text-xl">Kubrix</span>
             </div>
             <p className="text-muted-foreground max-w-md">
               Ihre Experten für KI-Integration und Prozessautomatisierung. 
@@ -39,9 +38,8 @@ export const Footer = () => {
         
         {/* Bottom */}
         <div className="pt-8 border-t border-border/50 text-center text-sm text-muted-foreground">
-          <p>© 2025 AI Agentur. Alle Rechte vorbehalten.</p>
+          <p>© 2025 Kubrix.de. Alle Rechte vorbehalten.</p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
