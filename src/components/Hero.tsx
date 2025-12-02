@@ -10,7 +10,7 @@ export const Hero = () => {
         </div>
         
         {/* Main Heading */}
-        <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-tight mb-6 animate-in fade-in slide-in-from-bottom-4 duration-700 delay-100">
+        <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-tight mb-6 animate-in fade-in slide-in-from-bottom-4 duration-700 delay-100 font-sans">
           Automatisierung, die{" "}
           <span className="text-gradient">die wirkt</span>
         </h1>
@@ -27,9 +27,7 @@ export const Hero = () => {
             Kostenloses Beratungsgespräch
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </Button>
-          <Button variant="glass" size="xl">
-            Mehr erfahren
-          </Button>
+          
         </div>
         
         {/* Trust indicators */}
