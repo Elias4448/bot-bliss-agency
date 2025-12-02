@@ -111,10 +111,14 @@ export default {
   				}
   			}
   		},
-  		animation: {
-  			'accordion-down': 'accordion-down 0.2s ease-out',
-  			'accordion-up': 'accordion-up 0.2s ease-out'
-  		},
+		animation: {
+			'accordion-down': 'accordion-down 0.2s ease-out',
+			'accordion-up': 'accordion-up 0.2s ease-out',
+			'blob-1': 'blob-1 25s ease-in-out infinite',
+			'blob-2': 'blob-2 30s ease-in-out infinite',
+			'blob-3': 'blob-3 28s ease-in-out infinite',
+			'blob-4': 'blob-4 32s ease-in-out infinite'
+		},
   		boxShadow: {
   			'2xs': 'var(--shadow-2xs)',
   			xs: 'var(--shadow-xs)',
