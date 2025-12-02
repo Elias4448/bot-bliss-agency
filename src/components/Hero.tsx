@@ -11,8 +11,8 @@ export const Hero = () => {
         
         {/* Main Heading */}
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-tight mb-6 animate-in fade-in slide-in-from-bottom-4 duration-700 delay-100 font-sans">
-          <span className="text-[sidebar-accent-foreground] text-popover-foreground">Mehr Effizienz,   </span>
-          <span className="text-gradient"> weniger Aufwand</span>
+          <span className="text-gradient">Mehr Effizienz,   </span>
+          <span className="text-popover-foreground"> weniger Aufwand</span>
         </h1>
         
         {/* Subheading */}
