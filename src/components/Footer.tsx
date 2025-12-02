@@ -6,7 +6,7 @@ export const Footer = () => {
           <div className="md:col-span-2">
             <div className="flex items-center gap-2 mb-4">
               <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center">
-                <span className="text-white font-bold text-xl">AI</span>
+                <span className="text-white font-bold text-xl">Ku</span>
               </div>
               <span className="font-bold text-xl">Kubrix</span>
             </div>
