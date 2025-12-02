@@ -1,8 +1,7 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 export const DotGrid = () => {
-  const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
-  const containerRef = useRef<HTMLDivElement>(null);
+  const [mousePos, setMousePos] = useState({ x: -1000, y: -1000 });
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
@@ -15,14 +14,26 @@ export const DotGrid = () => {
 
   return (
     <div 
-      ref={containerRef}
-      className="fixed inset-0 -z-5 pointer-events-none"
-      style={{
-        backgroundImage: `radial-gradient(circle, hsl(220 13% 13% / 0.15) 1px, transparent 1px)`,
-        backgroundSize: '24px 24px',
-        maskImage: `radial-gradient(circle 300px at ${mousePos.x}px ${mousePos.y}px, rgba(0,0,0,0.4), rgba(0,0,0,0.05))`,
-        WebkitMaskImage: `radial-gradient(circle 300px at ${mousePos.x}px ${mousePos.y}px, rgba(0,0,0,0.4), rgba(0,0,0,0.05))`,
-      }}
-    />
+      className="fixed inset-0 pointer-events-none"
+      style={{ zIndex: 1 }}
+    >
+      <div
+        className="absolute inset-0"
+        style={{
+          backgroundImage: `radial-gradient(circle, hsl(220 13% 13% / 0.08) 1.5px, transparent 1.5px)`,
+          backgroundSize: '32px 32px',
+          opacity: 0.6,
+        }}
+      />
+      <div
+        className="absolute inset-0"
+        style={{
+          backgroundImage: `radial-gradient(circle, hsl(220 13% 13% / 0.25) 1.5px, transparent 1.5px)`,
+          backgroundSize: '32px 32px',
+          maskImage: `radial-gradient(circle 250px at ${mousePos.x}px ${mousePos.y}px, black, transparent)`,
+          WebkitMaskImage: `radial-gradient(circle 250px at ${mousePos.x}px ${mousePos.y}px, black, transparent)`,
+        }}
+      />
+    </div>
   );
 };
