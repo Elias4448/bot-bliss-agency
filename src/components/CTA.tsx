@@ -23,9 +23,7 @@ export const CTA = () => {
                 Kostenloses Erstgespräch vereinbaren
                 
               </Button>
-              <Button variant="glass" size="xl">
-                Kontakt aufnehmen
-              </Button>
+              
             </div>
             
             <p className="mt-8 text-sm text-muted-foreground">
