@@ -16,7 +16,7 @@ export const Hero = () => {
         </h1>
         
         {/* Subheading */}
-        <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto animate-in fade-in slide-in-from-bottom-4 duration-700 delay-200">Wir entwickeln maßgeschneiderte KI-Automationslösungen, die Ihre Geschäftsprozesse automatisieren und effizienter gestalten – damit Sie sich auf das Wesentliche konzentrieren können. ​</p>
+        <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto animate-in fade-in slide-in-from-bottom-4 duration-700 delay-200">Wir bauen KI-Telefonassistenten und Automationslösungen, die Zeit sparen & Kosten senken. Entlasten Sie Ihre Mitarbeiter mit intelligenten KI-Prozessen – ohne Mehraufwand.</p>
         
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-in fade-in slide-in-from-bottom-4 duration-700 delay-300">
@@ -31,11 +31,11 @@ export const Hero = () => {
         <div className="mt-16 flex flex-wrap justify-center gap-8 text-sm text-muted-foreground animate-in fade-in duration-700 delay-500">
           <div className="flex items-center gap-2">
             <div className="w-2 h-2 rounded-full bg-primary" />
-            <span>DSGVO-konform</span>
+            <span>24/7 verfügbar</span>
           </div>
           <div className="flex items-center gap-2">
             <div className="w-2 h-2 rounded-full bg-primary" />
-            <span>24/7 verfügbar</span>
+            <span>DSGVO-konform</span>
           </div>
           <div className="flex items-center gap-2">
             <div className="w-2 h-2 rounded-full bg-primary" />
