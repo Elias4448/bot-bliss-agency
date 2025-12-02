@@ -13,6 +13,7 @@ const Datenschutz = () => {
       <main className="pt-32 pb-20 px-6">
         <div className="max-w-3xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-bold mb-12">Datenschutzerklärung</h1>
+          <p className="text-muted-foreground mb-8">Kubrix (Elias Baumgartner)</p>
           
           <div className="glass border border-white/10 rounded-2xl p-8 md:p-12 space-y-10">
             {/* 1. Datenschutz auf einen Blick */}
@@ -20,50 +21,24 @@ const Datenschutz = () => {
               <h2 className="text-xl font-semibold mb-4 text-primary">1. Datenschutz auf einen Blick</h2>
               
               <h3 className="font-medium mb-2 text-foreground">Allgemeine Hinweise</h3>
-              <p className="text-muted-foreground leading-relaxed mb-6">
-                Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit deinen personenbezogenen Daten passiert, wenn du diese Website besuchst. Personenbezogene Daten sind alle Daten, mit denen du persönlich identifiziert werden kannst. Ausführliche Informationen zum Thema Datenschutz findest du in der folgenden Datenschutzerklärung.
-              </p>
-              
-              <h3 className="font-medium mb-2 text-foreground">Datenerfassung auf dieser Website</h3>
-              
-              <h4 className="text-sm font-medium mb-1 text-foreground/80">Wer ist verantwortlich für die Datenerfassung auf dieser Website?</h4>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Die Kontaktdaten kannst du dem Impressum dieser Website entnehmen.
+                Die folgenden Hinweise geben einen Überblick darüber, was mit deinen personenbezogenen Daten passiert, wenn du diese Website besuchst. Personenbezogene Daten sind alle Daten, mit denen du persönlich identifiziert werden kannst.
               </p>
-              
-              <h4 className="text-sm font-medium mb-1 text-foreground/80">Wie erfassen wir deine Daten?</h4>
-              <p className="text-muted-foreground leading-relaxed mb-4">
-                Deine Daten werden zum einen dadurch erhoben, dass du uns diese mitteilst, z. B. durch die Eingabe in ein Kontaktformular. Andere Daten werden automatisch oder nach deiner Einwilligung beim Besuch der Website durch IT-Systeme erfasst (z. B. durch Cookies).
-              </p>
-              
-              <h4 className="text-sm font-medium mb-1 text-foreground/80">Wofür nutzen wir deine Daten?</h4>
               <p className="text-muted-foreground leading-relaxed">
-                Ein Teil der Daten wird erhoben, um eine fehlerfreie Bereitstellung der Website zu gewährleisten. Andere Daten können zur Analyse deines Nutzerverhaltens verwendet werden.
+                Ausführliche Informationen findest du in den nachstehenden Abschnitten dieser Datenschutzerklärung.
               </p>
             </section>
 
-            {/* 2. Hosting */}
+            {/* 2. Verantwortliche Stelle */}
             <section>
-              <h2 className="text-xl font-semibold mb-4 text-primary">2. Hosting und Content Delivery Networks (CDN)</h2>
-              <p className="text-muted-foreground leading-relaxed">
-                Unsere Website wird bei einem externen Dienstleister gehostet (Hosting-Anbieter). Personenbezogene Daten, die auf dieser Website erfasst werden, werden auf den Servern des Hosters gespeichert.
-              </p>
-            </section>
-
-            {/* 3. Allgemeine Hinweise */}
-            <section>
-              <h2 className="text-xl font-semibold mb-4 text-primary">3. Allgemeine Hinweise und Pflichtinformationen</h2>
-              
-              <h3 className="font-medium mb-2 text-foreground">Datenschutz</h3>
-              <p className="text-muted-foreground leading-relaxed mb-6">
-                Wir nehmen den Schutz deiner persönlichen Daten sehr ernst und behandeln deine personenbezogenen Daten vertraulich sowie entsprechend der gesetzlichen Datenschutzvorschriften und dieser Datenschutzerklärung.
-              </p>
-              
-              <h3 className="font-medium mb-2 text-foreground">Hinweis zur verantwortlichen Stelle</h3>
-              <p className="text-muted-foreground mb-2">Verantwortlich für die Datenverarbeitung auf dieser Website ist:</p>
-              <div className="space-y-1 text-muted-foreground">
-                <p><span className="text-foreground">Name:</span> Elias Baumgartner</p>
-                <p><span className="text-foreground">Adresse:</span> Schivelbeiner Str. 32, 10439 Berlin</p>
+              <h2 className="text-xl font-semibold mb-4 text-primary">2. Verantwortliche Stelle</h2>
+              <div className="space-y-1 text-muted-foreground mb-6">
+                <p className="font-medium text-foreground">Kubrix – Elias Baumgartner</p>
+                <p>Schivelbeiner Str. 32</p>
+                <p>10439 Berlin</p>
+                <p>Deutschland</p>
+              </div>
+              <div className="space-y-1 text-muted-foreground mb-6">
                 <p>
                   <span className="text-foreground">E-Mail:</span>{" "}
                   <a href="mailto:eliasbaumgartner@outlook.com" className="hover:text-primary transition-colors">
@@ -77,70 +52,179 @@ const Datenschutz = () => {
                   </a>
                 </p>
               </div>
+              <p className="text-muted-foreground leading-relaxed">
+                Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten entscheidet.
+              </p>
+            </section>
+
+            {/* 3. Hosting */}
+            <section>
+              <h2 className="text-xl font-semibold mb-4 text-primary">3. Hosting</h2>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                Diese Website wird bei All-Inkl.com – Neue Medien Münnich gehostet. Die über diese Website erhobenen personenbezogenen Daten werden auf den Servern des Hosting-Anbieters verarbeitet.
+              </p>
+              <p className="text-muted-foreground mb-2">Es erfolgt eine Verarbeitung auf Grundlage von:</p>
+              <ul className="list-disc list-inside space-y-1 text-muted-foreground mb-4">
+                <li>Art. 6 Abs. 1 lit. b DSGVO (Vertrag/Anbahnung)</li>
+                <li>Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse: sichere & funktionale Bereitstellung der Website)</li>
+              </ul>
+              <p className="text-muted-foreground leading-relaxed">
+                Mit dem Hoster wurde ein Auftragsverarbeitungsvertrag (AVV) abgeschlossen.
+              </p>
             </section>
 
             {/* 4. Datenerfassung */}
             <section>
               <h2 className="text-xl font-semibold mb-4 text-primary">4. Datenerfassung auf dieser Website</h2>
               
-              <h3 className="font-medium mb-2 text-foreground">Cookies</h3>
-              <p className="text-muted-foreground leading-relaxed mb-4">
-                Unsere Website verwendet Cookies. Cookies sind kleine Textdateien, die auf deinem Endgerät gespeichert werden. Sie dienen dazu, die Website nutzerfreundlicher und effektiver zu machen.
-              </p>
+              <h3 className="font-medium mb-2 text-foreground">a) Technische Daten / Server-Logfiles</h3>
+              <p className="text-muted-foreground mb-2">Beim Besuch dieser Website werden automatisch Daten erfasst, darunter:</p>
+              <ul className="list-disc list-inside space-y-1 text-muted-foreground mb-4">
+                <li>Browsertyp & Browserversion</li>
+                <li>Verwendetes Betriebssystem</li>
+                <li>Referrer-URL</li>
+                <li>Hostname des zugreifenden Rechners</li>
+                <li>Uhrzeit der Serveranfrage</li>
+                <li>IP-Adresse (gekürzt oder anonymisiert)</li>
+              </ul>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                Du kannst deinen Browser so einstellen, dass du über das Setzen von Cookies informiert wirst und diese nur im Einzelfall erlaubst oder generell ausschließt.
+                <span className="text-foreground">Rechtsgrundlage:</span> Art. 6 Abs. 1 lit. f DSGVO
               </p>
               
-              <h3 className="font-medium mb-2 text-foreground">Kontaktformular</h3>
+              <h3 className="font-medium mb-2 text-foreground">b) Cookies & Einwilligungsmanagement</h3>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                Diese Website verwendet einen Cookie-Banner, bereitgestellt durch CookieYes, um rechtlich erforderliche Einwilligungen einzuholen.
+              </p>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                Cookies werden erst gesetzt, wenn Besucher zugestimmt haben (Ausnahme: technisch notwendige Cookies).
+              </p>
+              <p className="text-muted-foreground mb-6">
+                <span className="text-foreground">Rechtsgrundlage:</span><br />
+                Art. 6 Abs. 1 lit. a DSGVO (Einwilligung)<br />
+                Art. 6 Abs. 1 lit. f DSGVO (technische Notwendigkeit)
+              </p>
+              
+              <h3 className="font-medium mb-2 text-foreground">c) Kontaktformular & E-Mail-Anfragen</h3>
+              <p className="text-muted-foreground mb-2">Wenn du uns per Kontaktformular kontaktierst, werden folgende Daten verarbeitet:</p>
+              <ul className="list-disc list-inside space-y-1 text-muted-foreground mb-4">
+                <li>Name</li>
+                <li>E-Mail-Adresse</li>
+                <li>Nachricht / Anfrageinhalt</li>
+                <li>Optional: Telefonnummer</li>
+              </ul>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                Diese Daten nutzen wir ausschließlich zur Bearbeitung deiner Anfrage.
+              </p>
+              <p className="text-muted-foreground mb-4">
+                <span className="text-foreground">Rechtsgrundlage:</span><br />
+                Art. 6 Abs. 1 lit. b DSGVO (Vertrag/Anbahnung)<br />
+                Art. 6 Abs. 1 lit. a DSGVO (Einwilligung – falls freiwillige Angaben)
+              </p>
+              
+              <h4 className="text-sm font-medium mb-2 text-foreground/80">Zukünftige Verarbeitung über n8n / KI-Systeme</h4>
               <p className="text-muted-foreground leading-relaxed">
-                Wenn du uns per Kontaktformular Anfragen zukommen lässt, werden deine Angaben zur Bearbeitung der Anfrage gespeichert. Diese Daten geben wir nicht ohne deine Einwilligung weiter.
+                Sollte das Kontaktformular zukünftig in Automationssysteme (z. B. n8n, OpenAI, API-Dienste) eingebunden werden, erfolgt dies ausschließlich bei Vorliegen deiner Einwilligung (Art. 6 Abs. 1 lit. a DSGVO) und im Rahmen eines AVV mit den jeweiligen Dienstleistern.
               </p>
             </section>
 
             {/* 5. Google Analytics */}
             <section>
-              <h2 className="text-xl font-semibold mb-4 text-primary">5. Google Analytics</h2>
+              <h2 className="text-xl font-semibold mb-4 text-primary">5. Webanalyse – Google Analytics 4</h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                Diese Website nutzt Google Analytics, einen Webanalysedienst von Google LLC („Google"). Google Analytics verwendet „Cookies", die eine Analyse deiner Nutzung der Website ermöglichen.
+                Diese Website verwendet Google Analytics 4.
+              </p>
+              <p className="text-muted-foreground mb-4">
+                <span className="text-foreground">Dienstanbieter:</span><br />
+                Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                Die durch das Cookie erzeugten Informationen werden in der Regel an einen Server von Google in den USA übertragen und dort gespeichert. Wir haben die IP-Anonymisierung aktiviert, sodass deine IP-Adresse innerhalb der EU gekürzt wird.
+                Analytics verwendet Cookies nur nach deiner Einwilligung über den Cookie-Banner.
+              </p>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                IP-Anonymisierung ist aktiviert. Übermittlungen in die USA erfolgen auf Grundlage von Standardvertragsklauseln der EU.
+              </p>
+              <p className="text-muted-foreground mb-4">
+                <span className="text-foreground">Rechtsgrundlage:</span> Art. 6 Abs. 1 lit. a DSGVO (Einwilligung)
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                Du kannst die Speicherung der Cookies durch eine entsprechende Einstellung deines Browsers verhindern. Zusätzlich kannst du die Erfassung der Daten durch Google Analytics deaktivieren, indem du das Browser-Add-on zur Deaktivierung von Google Analytics herunterlädst:{" "}
-                <a 
-                  href="https://tools.google.com/dlpage/gaoptout" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-primary hover:underline"
-                >
-                  https://tools.google.com/dlpage/gaoptout
-                </a>
+                Du kannst deine Einwilligung jederzeit widerrufen über den Cookie-Banner.
               </p>
             </section>
 
-            {/* 6. Deine Rechte */}
+            {/* 6. KI-Dienste */}
             <section>
-              <h2 className="text-xl font-semibold mb-4 text-primary">6. Deine Rechte</h2>
-              <p className="text-muted-foreground mb-4">Dir stehen folgende Rechte bezüglich deiner Daten zu:</p>
-              <ul className="list-disc list-inside space-y-2 text-muted-foreground mb-4">
-                <li>Auskunft über gespeicherte Daten</li>
-                <li>Berichtigung falscher Daten</li>
-                <li>Löschung deiner Daten, sofern keine gesetzlichen Pflichten dagegensprechen</li>
-                <li>Einschränkung der Verarbeitung</li>
-                <li>Widerspruch gegen die Verarbeitung</li>
-                <li>Datenübertragbarkeit</li>
+              <h2 className="text-xl font-semibold mb-4 text-primary">6. KI-Dienste & Automatisierungsplattformen (OpenAI, n8n)</h2>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                Für bestimmte Dienstleistungen von Kubrix kann die Verarbeitung personenbezogener Daten über KI- oder Automationsplattformen erforderlich sein.
+              </p>
+              <p className="text-muted-foreground mb-2">Mögliche Dienstleister:</p>
+              <ul className="list-disc list-inside space-y-1 text-muted-foreground mb-4">
+                <li>OpenAI, L.L.C. (USA)</li>
+                <li>n8n GmbH</li>
+                <li>API-basierte Drittanbieter</li>
+              </ul>
+              <p className="text-muted-foreground mb-2">Eine solche Verarbeitung erfolgt nur:</p>
+              <ul className="list-disc list-inside space-y-1 text-muted-foreground">
+                <li>nach ausdrücklicher Einwilligung (Art. 6 Abs. 1 lit. a DSGVO),</li>
+                <li>im Rahmen eines Vertrages oder einer Anbahnung (Art. 6 Abs. 1 lit. b DSGVO),</li>
+                <li>auf Basis eines Auftragsverarbeitungsvertrages,</li>
+                <li>mit geeigneten Garantien für Datenübertragung in Drittländer (Standardvertragsklauseln der EU).</li>
+              </ul>
+            </section>
+
+            {/* 7. Deine Rechte */}
+            <section>
+              <h2 className="text-xl font-semibold mb-4 text-primary">7. Rechte der betroffenen Person</h2>
+              <p className="text-muted-foreground mb-4">Du hast jederzeit das Recht auf:</p>
+              <ul className="list-disc list-inside space-y-1 text-muted-foreground mb-4">
+                <li>Auskunft (Art. 15 DSGVO)</li>
+                <li>Berichtigung (Art. 16)</li>
+                <li>Löschung (Art. 17)</li>
+                <li>Einschränkung der Verarbeitung (Art. 18)</li>
+                <li>Widerspruch (Art. 21)</li>
+                <li>Datenübertragbarkeit (Art. 20)</li>
               </ul>
               <p className="text-muted-foreground leading-relaxed">
-                Falls du Fragen zum Datenschutz hast, kannst du uns jederzeit kontaktieren.
+                <span className="text-foreground">Beschwerderecht bei der Aufsichtsbehörde:</span><br />
+                Berliner Beauftragte für Datenschutz und Informationsfreiheit.
               </p>
             </section>
 
-            {/* 7. Aktualisierung */}
+            {/* 8. Widerruf */}
             <section>
-              <h2 className="text-xl font-semibold mb-4 text-primary">7. Aktualisierung der Datenschutzerklärung</h2>
+              <h2 className="text-xl font-semibold mb-4 text-primary">8. Widerruf von Einwilligungen</h2>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                Du kannst jede Einwilligung jederzeit mit Wirkung für die Zukunft widerrufen. Dies umfasst u. a.:
+              </p>
+              <ul className="list-disc list-inside space-y-1 text-muted-foreground mb-4">
+                <li>Google Analytics</li>
+                <li>Kontaktformular-Verarbeitung</li>
+                <li>KI-basierte Datenverarbeitung</li>
+              </ul>
+              <p className="text-muted-foreground mb-2">Widerruf über:</p>
+              <ul className="list-disc list-inside space-y-1 text-muted-foreground">
+                <li>den Cookie-Banner</li>
+                <li>eine einfache E-Mail an:{" "}
+                  <a href="mailto:eliasbaumgartner@outlook.com" className="text-primary hover:underline">
+                    eliasbaumgartner@outlook.com
+                  </a>
+                </li>
+              </ul>
+            </section>
+
+            {/* 9. Datenspeicherdauer */}
+            <section>
+              <h2 className="text-xl font-semibold mb-4 text-primary">9. Datenspeicherdauer</h2>
               <p className="text-muted-foreground leading-relaxed">
-                Wir behalten uns vor, diese Datenschutzerklärung anzupassen, um sie an geänderte rechtliche Anforderungen oder neue Funktionen auf unserer Website anzupassen.
+                Daten werden nur so lange gespeichert, wie für die jeweilige Zweckbestimmung erforderlich oder gesetzlich vorgeschrieben.
+              </p>
+            </section>
+
+            {/* 10. Aktualisierung */}
+            <section>
+              <h2 className="text-xl font-semibold mb-4 text-primary">10. Aktualisierung der Datenschutzerklärung</h2>
+              <p className="text-muted-foreground leading-relaxed">
+                Diese Datenschutzerklärung wird bei Bedarf angepasst, um sie aktuellen rechtlichen Vorgaben oder technischen Veränderungen anzupassen.
               </p>
             </section>
           </div>
