@@ -11,15 +11,12 @@ export const Hero = () => {
         
         {/* Main Heading */}
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-tight mb-6 animate-in fade-in slide-in-from-bottom-4 duration-700 delay-100 font-sans">
-          <span>Automatisierung, die </span>
-          <span className="text-gradient">wirken</span>
+          <span className="text-[sidebar-accent-foreground] text-popover-foreground">Mehr Effizienz,   </span>
+          <span className="text-gradient"> weniger Aufwand</span>
         </h1>
         
         {/* Subheading */}
-        <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto animate-in fade-in slide-in-from-bottom-4 duration-700 delay-200">
-          Wir entwickeln maßgeschneiderte KI-Lösungen und automatisieren Ihre Geschäftsprozesse – 
-          damit Sie sich auf das Wesentliche konzentrieren können.
-        </p>
+        <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto animate-in fade-in slide-in-from-bottom-4 duration-700 delay-200">Wir entwickeln maßgeschneiderte KI-Lösungen, die Ihre Geschäftsprozesse automatisieren und effizienter gestalten – damit Sie sich auf das Wesentliche konzentrieren können. ​</p>
         
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-in fade-in slide-in-from-bottom-4 duration-700 delay-300">
@@ -34,15 +31,15 @@ export const Hero = () => {
         <div className="mt-16 flex flex-wrap justify-center gap-8 text-sm text-muted-foreground animate-in fade-in duration-700 delay-500">
           <div className="flex items-center gap-2">
             <div className="w-2 h-2 rounded-full bg-primary" />
-            <span>100% Datenschutz</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <div className="w-2 h-2 rounded-full bg-primary" />
-            <span>Deutsche Server</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <div className="w-2 h-2 rounded-full bg-primary" />
             <span>DSGVO-konform</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <div className="w-2 h-2 rounded-full bg-primary" />
+            <span>24/7 verfügbar</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <div className="w-2 h-2 rounded-full bg-primary" />
+            <span>Individuell entwickelt</span>
           </div>
         </div>
       </div>
