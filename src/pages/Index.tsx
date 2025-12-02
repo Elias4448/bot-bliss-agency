@@ -5,11 +5,13 @@ import { Benefits } from "@/components/Benefits";
 import { CTA } from "@/components/CTA";
 import { Footer } from "@/components/Footer";
 import { BackgroundBlobs } from "@/components/BackgroundBlobs";
+import { DotGrid } from "@/components/DotGrid";
 
 const Index = () => {
   return (
     <div className="relative min-h-screen">
       <BackgroundBlobs />
+      <DotGrid />
       <Navigation />
       <main>
         <Hero />
