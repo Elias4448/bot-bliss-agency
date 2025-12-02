@@ -1,9 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles } from "lucide-react";
-
 export const Hero = () => {
-  return (
-    <section className="relative min-h-[90vh] flex items-center justify-center px-6 py-20">
+  return <section className="relative min-h-[90vh] flex items-center justify-center px-6 py-20">
       <div className="max-w-5xl mx-auto text-center">
         {/* Badge */}
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass border border-white/20 mb-8 animate-in fade-in slide-in-from-bottom-4 duration-700">
@@ -14,7 +12,7 @@ export const Hero = () => {
         {/* Main Heading */}
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-tight mb-6 animate-in fade-in slide-in-from-bottom-4 duration-700 delay-100">
           Automatisierung, die{" "}
-          <span className="text-gradient">wirklich funktioniert</span>
+          <span className="text-gradient">die wirkt</span>
         </h1>
         
         {/* Subheading */}
@@ -50,6 +48,5 @@ export const Hero = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
