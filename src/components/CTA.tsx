@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Calendar } from "lucide-react";
+import { Calendar } from "lucide-react";
 export const CTA = () => {
   return <section className="py-24 px-6 relative">
       <div className="max-w-4xl mx-auto">
@@ -14,15 +14,14 @@ export const CTA = () => {
               Bereit für <span className="text-gradient">effizientere Prozesse?</span>
             </h2>
             <p className="text-xl text-muted-foreground mb-10 max-w-2xl mx-auto">
-              Lassen Sie uns gemeinsam herausfinden, wie KI und Automatisierung 
-              Ihr Unternehmen voranbringen können.
+              Lassen Sie uns gemeinsam herausfinden, wie KI-Telefonassistenten und Automatisierung Ihre tägliche Arbeit spürbar erleichtern können.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button variant="hero" size="xl" className="group">
                 <Calendar className="w-5 h-5" />
-                Termin vereinbaren
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                Kostenloses Erstgespräch vereinbaren
+                
               </Button>
               <Button variant="glass" size="xl">
                 Kontakt aufnehmen
@@ -30,7 +29,7 @@ export const CTA = () => {
             </div>
             
             <p className="mt-8 text-sm text-muted-foreground">
-              Kostenlose Erstberatung • Keine Verpflichtungen • 100% unverbindlich
+              Kostenlose Erstberatung • Keine Verpflichtungen • Klarer Mehrwert in nur 15 Minuten 
             </p>
           </div>
         </div>
