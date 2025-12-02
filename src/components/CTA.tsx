@@ -29,7 +29,7 @@ export const CTA = () => {
             </div>
             
             <p className="mt-8 text-sm text-muted-foreground">
-              Kostenlose Erstberatung • Keine Verpflichtungen • Klarer Mehrwert in nur 15 Minuten 
+              100 % unverbindlich • Klare Empfehlungen in nur 15 Minuten • DSGVO-konform 
             </p>
           </div>
         </div>
