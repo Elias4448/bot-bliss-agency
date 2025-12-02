@@ -12,7 +12,7 @@ export const Hero = () => {
         {/* Main Heading */}
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-tight mb-6 animate-in fade-in slide-in-from-bottom-4 duration-700 delay-100">
           Automatisierung, die{" "}
-          <span className="text-gradient">die wirkt</span>
+          <span className="text-gradient">Automatisierung, </span>
         </h1>
         
         {/* Subheading */}
