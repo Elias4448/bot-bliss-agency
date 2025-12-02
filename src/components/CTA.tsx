@@ -16,7 +16,7 @@ export const CTA = () => {
           
           <div className="relative z-10">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-              Bereit zu sehen, wie ein <span className="text-gradient">KI-Telefonassistent</span> oder ein <span className="text-gradient">automatisierter Workflow</span> Ihr Unternehmen entlasten kann?
+              Bereit für die <span className="text-gradient">digitale Transformation?</span>
             </h2>
             <p className="text-xl text-muted-foreground mb-10 max-w-2xl mx-auto">
               Lassen Sie uns gemeinsam herausfinden, wie KI und Automatisierung 
