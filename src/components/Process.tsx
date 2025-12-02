@@ -29,7 +29,7 @@ export const Process = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            So läuft die Zusammenarbeit
+            So läuft die <span className="text-gradient">Zusammenarbeit</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             „Ein klarer Prozess. Ein fester Ansprechpartner. Messbare Ergebnisse."
