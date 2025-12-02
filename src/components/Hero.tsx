@@ -6,7 +6,7 @@ export const Hero = () => {
         {/* Badge */}
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass border border-white/20 mb-8 animate-in fade-in slide-in-from-bottom-4 duration-700">
           <Sparkles className="w-4 h-4 text-primary" />
-          <span className="text-sm font-medium">KI-Telefonassistenten & Automatisierungen, die Ihr Team spürbar entlasten.</span>
+          <span className="text-sm font-medium">KI-Telefonassistenten & Automatisierungen für Ihr Unternehmen</span>
         </div>
         
         {/* Main Heading */}
