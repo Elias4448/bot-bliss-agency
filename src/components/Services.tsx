@@ -5,7 +5,7 @@ const services = [
   {
     icon: Lightbulb,
     title: "Beratung, Konzeption & Implementierung",
-    description: "Wir analysieren Prozesse, definieren Automatisierungspotenziale und entwickeln maßgeschneiderte KI-Lösungen."
+    description: "Wir analysieren Ihre Abläufe und entwickeln Automationen, die messbar Zeit sparen, Fehler reduzieren und die Produktivität Ihres Teams erhöhen."
   },
   {
     icon: Phone,
