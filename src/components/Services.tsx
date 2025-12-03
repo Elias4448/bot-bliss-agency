@@ -11,7 +11,7 @@ const services = [{
 }, {
   icon: Workflow,
   title: "Workflow-Automatisierung & API-Integration",
-  description: "Wir automatisieren wiederkehrende Aufgaben, verbinden Systeme und schaffen reibungslose, effiziente Abläufe."
+  description: "Wir verbinden Systeme, automatisieren wiederkehrende Aufgaben und schaffen reibungslose Prozesse mit maximaler Effizienz."
 }, {
   icon: Server,
   title: "Managed Hosting & Support",
