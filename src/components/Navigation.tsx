@@ -43,7 +43,14 @@ export const Navigation = () => {
           
           {/* CTA */}
           <div className="flex items-center gap-4">
-            <Button variant="hero" size="default" className="hidden sm:inline-flex">
+            <Button 
+              variant="hero" 
+              size="default" 
+              className="hidden sm:inline-flex"
+              data-cal-namespace="kubrix"
+              data-cal-link="20-minuten-analysegespraech-automatisierungspotenziale-entdecken"
+              data-cal-config='{"layout":"month_view"}'
+            >
               Jetzt starten
             </Button>
             <Button variant="ghost" size="icon" className="md:hidden">
