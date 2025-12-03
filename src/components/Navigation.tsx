@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Menu } from "lucide-react";
 import { useNavigate, useLocation } from "react-router-dom";
-import logoKubrix from "@/assets/logo-kubrix.png";
+import logoKubrix from "@/assets/logo-kubrix-lila.png";
 
 export const Navigation = () => {
   const navigate = useNavigate();
