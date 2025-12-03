@@ -11,12 +11,12 @@ export const Hero = () => {
         
         {/* Main Heading */}
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-tight mb-6 animate-in fade-in slide-in-from-bottom-4 duration-700 delay-100 font-sans">
-          <span className="text-gradient">Mehr Effizienz,   </span>
-          <span className="text-popover-foreground"> weniger Aufwand</span>
+          <span className="text-gradient">Automatisieren,   </span>
+          <span className="text-popover-foreground"> was heute noch Zeit frisst.    </span>
         </h1>
         
         {/* Subheading */}
-        <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto animate-in fade-in slide-in-from-bottom-4 duration-700 delay-200">Wir entwickeln maßgeschneiderte KI-Telefonassistenten und Automationslösungen, die Zeit sparen & Kosten senken. Entlasten Sie Ihre Mitarbeiter mit intelligenten KI-Prozessen – ohne Mehraufwand.</p>
+        <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto animate-in fade-in slide-in-from-bottom-4 duration-700 delay-200">Wir entwickeln KI-Assistenten und Automatisierungen, die Anrufe beantworten, Leads qualifizieren, Prozesse ausführen und Teams spürbar entlasten – DSGVO-konform und individuell gebaut.</p>
         
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-in fade-in slide-in-from-bottom-4 duration-700 delay-300">
