@@ -7,7 +7,7 @@ const services = [{
 }, {
   icon: Phone,
   title: "KI-Telefonassistenten & Voice-Automation",
-  description: "Qualifizieren Leads automatisch, beantworten Kundenfragen und koordinieren Termine – rund um die Uhr, ohne zusätzliches Personal."
+  description: "Intelligente KI-Assistenten übernehmen Anrufe, qualifizieren Leads, beantworten Kundenfragen und koordinieren Termine – zuverlässig, skalierbar und rund um die Uhr."
 }, {
   icon: Workflow,
   title: "Workflow-Automatisierung & API-Integration",
