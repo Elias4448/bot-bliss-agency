@@ -48,6 +48,15 @@ export const Footer = () => {
               <li><a href="/impressum" className="hover:text-primary transition-colors">Impressum</a></li>
               <li><a href="/datenschutz" className="hover:text-primary transition-colors">Datenschutz</a></li>
               <li><a href="/agb" className="hover:text-primary transition-colors">AGB</a></li>
+              <li>
+                <a 
+                  href="#" 
+                  onClick={(e) => { e.preventDefault(); (window as any).SilktideConsent?.show(); }}
+                  className="hover:text-primary transition-colors"
+                >
+                  Cookie-Einstellungen ändern
+                </a>
+              </li>
             </ul>
           </div>
         </div>
