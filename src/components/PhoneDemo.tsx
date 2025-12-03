@@ -100,19 +100,8 @@ export const PhoneDemo = () => {
   return <section className="py-24 px-6 relative overflow-hidden">
       <div className="max-w-2xl mx-auto text-center">
         {/* Header */}
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 tracking-tight mx-0">Testen Sie unseren KI-Telefonassistenten
-
-
-
-
-
-
-
-
-
-
-
-        <br />Mensch übernehmen
+        <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 tracking-tight">
+          <span className="text-primary">Testen</span> Sie unseren <span className="text-primary">KI-Telefonassistenten</span>
         </h2>
         <p className="text-muted-foreground text-lg mb-12">
           Teste jetzt unsere KI in einem Anruf
