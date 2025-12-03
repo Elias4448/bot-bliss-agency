@@ -24,7 +24,7 @@ export const Process = () => {
             So läuft die <span className="text-gradient">Zusammenarbeit</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Ein klarer Prozess. Ein fester Ansprechpartner. Messbare Ergebnisse.
+            Ein klar strukturierter Prozess. Ein fester Ansprechpartner. Messbare Ergebnisse.
           </p>
         </div>
 
