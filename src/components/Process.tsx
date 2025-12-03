@@ -14,7 +14,7 @@ const steps = [{
 }, {
   icon: Headphones,
   title: "4. Betrieb & Support",
-  description: "Auf Wunsch übernehmen wir Hosting, Monitoring und Weiterentwicklung Ihrer KI-Systeme."
+  description: "Auf Wunsch übernehmen wir Hosting, Monitoring und Weiterentwicklung Ihrer KI-Systeme – sicher, zuverlässig und vollständig betreut."
 }];
 export const Process = () => {
   return <section className="py-24 px-6">
