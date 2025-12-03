@@ -10,7 +10,7 @@ const steps = [{
 }, {
   icon: Cog,
   title: "3. Implementierung",
-  description: "Wir entwickeln Ihre KI-Lösung, integrieren sie in Ihre Systeme und begleiten Sie durch die Testphase."
+  description: "Wir entwickeln Ihre Lösung, integrieren sie in Ihre Systeme und begleiten Sie durch die Testphase – inklusive Änderungswünschen."
 }, {
   icon: Headphones,
   title: "4. Betrieb & Support",
