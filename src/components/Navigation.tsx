@@ -1,17 +1,25 @@
 import { Button } from "@/components/ui/button";
 import { Menu } from "lucide-react";
+import { useNavigate, useLocation } from "react-router-dom";
 import logoKubrix from "@/assets/logo-kubrix.png";
 
 export const Navigation = () => {
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const goToHome = () => {
+    if (location.pathname === "/") {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      navigate("/");
+    }
   };
 
   return <nav className="fixed top-0 left-0 right-0 z-50 px-6 py-4">
       <div className="max-w-7xl mx-auto">
         <div className="glass border border-white/20 rounded-2xl px-6 py-3 flex items-center justify-between">
           {/* Logo */}
-          <button onClick={scrollToTop} className="flex items-center gap-0.5 hover:opacity-80 transition-opacity">
+          <button onClick={goToHome} className="flex items-center gap-0.5 hover:opacity-80 transition-opacity">
             <img 
               src={logoKubrix} 
               alt="Kubrix Logo" 
