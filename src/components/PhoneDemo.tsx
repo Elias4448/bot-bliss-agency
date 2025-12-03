@@ -103,7 +103,7 @@ export const PhoneDemo = () => {
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 tracking-tight mx-0">
           Testen Sie unseren <span className="text-gradient">KI-Telefonassistenten</span>
         </h2>
-        <p className="text-muted-foreground text-lg mb-12">Testen Sie jetzt unsere KI in einem Anruf</p>
+        <p className="text-muted-foreground text-lg mb-12">Lust auf ein Praxisbeispiel? Testen Sie jetzt unsere KI in einem Anruf.</p>
 
         {/* Animated Orb */}
         
