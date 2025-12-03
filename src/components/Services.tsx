@@ -15,7 +15,7 @@ const services = [{
 }, {
   icon: Server,
   title: "Managed Hosting & Support",
-  description: "Wir betreiben, warten und erweitern Ihre KI-Systeme – sicher, zuverlässig und vollständig betreut."
+  description: "Wir betreiben, überwachen und erweitern Ihre KI-Systeme – sicher, zuverlässig und vollständig betreut."
 }];
 export const Services = () => {
   return <section className="py-24 px-6 relative">
