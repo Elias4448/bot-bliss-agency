@@ -93,31 +93,40 @@ export default {
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
   		},
-  		keyframes: {
-  			'accordion-down': {
-  				from: {
-  					height: '0'
-  				},
-  				to: {
-  					height: 'var(--radix-accordion-content-height)'
-  				}
-  			},
-  			'accordion-up': {
-  				from: {
-  					height: 'var(--radix-accordion-content-height)'
-  				},
-  				to: {
-  					height: '0'
-  				}
-  			}
-  		},
+		keyframes: {
+			'accordion-down': {
+				from: {
+					height: '0'
+				},
+				to: {
+					height: 'var(--radix-accordion-content-height)'
+				}
+			},
+			'accordion-up': {
+				from: {
+					height: 'var(--radix-accordion-content-height)'
+				},
+				to: {
+					height: '0'
+				}
+			},
+			'gradient-flow': {
+				'0%': {
+					backgroundPosition: '0% 50%'
+				},
+				'100%': {
+					backgroundPosition: '200% 50%'
+				}
+			}
+		},
 		animation: {
 			'accordion-down': 'accordion-down 0.2s ease-out',
 			'accordion-up': 'accordion-up 0.2s ease-out',
 			'blob-1': 'blob-1 25s ease-in-out infinite',
 			'blob-2': 'blob-2 30s ease-in-out infinite',
 			'blob-3': 'blob-3 28s ease-in-out infinite',
-			'blob-4': 'blob-4 32s ease-in-out infinite'
+			'blob-4': 'blob-4 32s ease-in-out infinite',
+			'gradient-flow': 'gradient-flow 3s linear infinite'
 		},
   		boxShadow: {
   			'2xs': 'var(--shadow-2xs)',
