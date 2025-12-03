@@ -1,16 +1,24 @@
 import { Button } from "@/components/ui/button";
 import { Menu } from "lucide-react";
+import logoKubrix from "@/assets/logo-kubrix.png";
+
 export const Navigation = () => {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return <nav className="fixed top-0 left-0 right-0 z-50 px-6 py-4">
       <div className="max-w-7xl mx-auto">
         <div className="glass border border-white/20 rounded-2xl px-6 py-3 flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center">
-              <span className="text-white font-bold text-xl">Ku</span>
-            </div>
+          <button onClick={scrollToTop} className="flex items-center gap-2 hover:opacity-80 transition-opacity">
+            <img 
+              src={logoKubrix} 
+              alt="Kubrix Logo" 
+              className="h-8 w-auto sm:h-10"
+            />
             <span className="font-bold text-xl hidden sm:inline">Kubrix</span>
-          </div>
+          </button>
           
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-8">
