@@ -1,3 +1,5 @@
+import logoKubrix from "@/assets/logo-kubrix.png";
+
 export const Footer = () => {
   return <footer className="py-12 px-6 border-t border-border/50">
       <div className="max-w-7xl mx-auto">
@@ -5,9 +7,11 @@ export const Footer = () => {
           {/* Brand */}
           <div className="md:col-span-2">
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center">
-                <span className="text-white font-bold text-xl">Ku</span>
-              </div>
+              <img 
+                src={logoKubrix} 
+                alt="Kubrix Logo" 
+                className="h-10 w-auto"
+              />
               <span className="font-bold text-xl">Kubrix</span>
             </div>
             <p className="text-muted-foreground max-w-md">
