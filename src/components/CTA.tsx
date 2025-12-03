@@ -64,7 +64,7 @@ export const CTA = () => {
                 size="xl" 
                 className="group"
                 data-cal-namespace="kubrix"
-                data-cal-link="20-minuten-analysegespraech-automatisierungspotenziale-entdecken"
+                data-cal-link="eliasbaumgartner/20-minuten-analysegesprach-automatisierungspotenziale-entdecken"
                 data-cal-config='{"layout":"month_view"}'
               >
                 <Calendar className="w-5 h-5" />

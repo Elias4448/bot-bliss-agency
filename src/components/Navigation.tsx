@@ -48,7 +48,7 @@ export const Navigation = () => {
               size="default" 
               className="hidden sm:inline-flex"
               data-cal-namespace="kubrix"
-              data-cal-link="20-minuten-analysegespraech-automatisierungspotenziale-entdecken"
+              data-cal-link="eliasbaumgartner/20-minuten-analysegesprach-automatisierungspotenziale-entdecken"
               data-cal-config='{"layout":"month_view"}'
             >
               Jetzt starten
