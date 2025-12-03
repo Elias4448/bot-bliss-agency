@@ -2,7 +2,7 @@ import { MessageSquare, Target, Cog, Headphones } from "lucide-react";
 const steps = [{
   icon: MessageSquare,
   title: "1. Kostenloses Erstgespräch",
-  description: "Wir analysieren Ihre Situation und identifizieren konkrete Potenziale für KI und Automatisierung."
+  description: "Wir verstehen Ihre Situation, analysieren Abläufe und identifizieren konkrete Automatisierungspotenziale."
 }, {
   icon: Target,
   title: "2. Workshop",
