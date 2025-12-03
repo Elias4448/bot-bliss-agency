@@ -117,7 +117,7 @@ export const PhoneDemo = () => {
           <div className="relative bg-card rounded-2xl p-6 shadow-lg">
             <form onSubmit={handleSubmit} className="space-y-4">
               <Input type="tel" placeholder="Telefonnummer eingeben" value={phoneNumber} onChange={e => setPhoneNumber(e.target.value)} className="h-12 text-base bg-muted/50 border-0 rounded-xl text-center placeholder:text-muted-foreground/60" />
-              <Button type="submit" disabled={isLoading} className="w-full h-12 text-base font-medium rounded-xl bg-foreground text-background hover:bg-foreground/90">
+              <Button type="submit" disabled={isLoading} className="w-full h-12 text-base font-medium rounded-xl bg-foreground hover:bg-foreground/90 text-primary-foreground">
                 {isLoading ? <span className="flex items-center gap-2">
                     <span className="w-4 h-4 border-2 border-background/30 border-t-background rounded-full animate-spin" />
                     Wird eingeleitet...
