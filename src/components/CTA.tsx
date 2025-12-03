@@ -14,7 +14,7 @@ export const CTA = () => {
               Bereit für <span className="text-gradient">effizientere Prozesse?</span>
             </h2>
             <p className="text-xl text-muted-foreground mb-10 max-w-2xl mx-auto">
-              Lassen Sie uns gemeinsam herausfinden, wie KI-Telefonassistenten und Automatisierung Ihre tägliche Arbeit spürbar erleichtern können.
+              Lassen Sie uns gemeinsam herausfinden, welche Automatisierungen Sie sofort entlasten und welche Ergebnisse realistisch sind.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
