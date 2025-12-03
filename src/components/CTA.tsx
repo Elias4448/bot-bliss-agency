@@ -60,23 +60,23 @@ export const CTA = () => {
               Lassen Sie uns gemeinsam herausfinden, welche Automatisierungen Sie sofort entlasten und welche Ergebnisse realistisch sind.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <div className="flex flex-col gap-5 justify-center items-center">
               <Button variant="hero" size="xl" className="group">
                 <Calendar className="w-5 h-5" />
                 Kostenloses Erstgespräch vereinbaren
               </Button>
-            </div>
 
-            {/* Secondary option */}
-            <button
-              onClick={() => setIsOpen(true)}
-              className="mt-6 text-sm text-[#6B6B6B] hover:text-foreground transition-colors inline-flex items-center gap-1 group"
-            >
-              Oder senden Sie uns Ihre Anfrage ohne Termin
-              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-            </button>
+              {/* Secondary CTA Button */}
+              <button
+                onClick={() => setIsOpen(true)}
+                className="px-8 py-3 rounded-xl border-2 border-[#A78BFA] text-[#5B21B6] bg-transparent font-medium text-base hover:bg-[#A78BFA]/10 hover:border-[#8B5CF6] transition-all duration-300 inline-flex items-center gap-2"
+              >
+                Anfrage ohne Termin senden
+                <ArrowRight className="w-4 h-4" />
+              </button>
+            </div>
             
-            <p className="mt-8 text-sm text-muted-foreground">
+            <p className="mt-10 text-sm text-muted-foreground">
               100 % unverbindlich • Klare Empfehlungen in nur 15 Minuten • DSGVO-konform 
             </p>
           </div>
