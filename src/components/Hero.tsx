@@ -20,7 +20,14 @@ export const Hero = () => {
         
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-in fade-in slide-in-from-bottom-4 duration-700 delay-300">
-          <Button variant="hero" size="xl" className="group">
+          <Button 
+            variant="hero" 
+            size="xl" 
+            className="group"
+            data-cal-namespace="kubrix"
+            data-cal-link="20-minuten-analysegespraech-automatisierungspotenziale-entdecken"
+            data-cal-config='{"layout":"month_view"}'
+          >
             Kostenloses Erstgespräch
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </Button>
