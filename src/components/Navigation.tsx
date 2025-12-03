@@ -11,7 +11,7 @@ export const Navigation = () => {
       <div className="max-w-7xl mx-auto">
         <div className="glass border border-white/20 rounded-2xl px-6 py-3 flex items-center justify-between">
           {/* Logo */}
-          <button onClick={scrollToTop} className="flex items-center gap-1 hover:opacity-80 transition-opacity">
+          <button onClick={scrollToTop} className="flex items-center gap-0.5 hover:opacity-80 transition-opacity">
             <img 
               src={logoKubrix} 
               alt="Kubrix Logo" 

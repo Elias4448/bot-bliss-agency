@@ -6,7 +6,7 @@ export const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           {/* Brand */}
           <div className="md:col-span-2">
-            <div className="flex items-center gap-1 mb-4">
+            <div className="flex items-center gap-0.5 mb-4">
               <img 
                 src={logoKubrix} 
                 alt="Kubrix Logo" 
