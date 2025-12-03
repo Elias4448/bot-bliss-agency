@@ -3,27 +3,27 @@ import { CheckCircle2 } from "lucide-react";
 const benefits = [
   {
     title: "Zeit sparen",
-    description: "Automatisieren Sie manuelle Aufgaben und schaffen Sie Freiraum für wertschöpfende Tätigkeiten."
+    description: "Reduzieren Sie manuelle Aufgaben und gewinnen Sie wertvolle Arbeitszeit für Tätigkeiten, die wirklich voranbringen."
   },
   {
-    title: "Kosten reduzieren",
-    description: "Senken Sie Betriebskosten durch effiziente KI-Prozesse – ohne zusätzlichen Personalaufwand."
+    title: "Kosten senken",
+    description: "Effiziente KI-Prozesse reduzieren Betriebskosten – ohne zusätzlichen Personalaufwand."
   },
   {
-    title: "Fehler minimieren",
-    description: "Strukturierte, KI-gestützte Abläufe sorgen für konsistente Ergebnisse und weniger Fehler."
+    title: "Fehler reduzieren",
+    description: "Standardisierte, KI-gesteuerte Abläufe sorgen für klare Ergebnisse und weniger Fehler."
   },
   {
-    title: "Skalierbar wachsen",
-    description: "Unsere Lösungen wachsen mit Ihrem Unternehmen – schnell, flexibel und ohne Grenzen."
+    title: "Skalierbarkeit erhöhen",
+    description: "Unsere Lösungen wachsen flexibel mit Ihrem Unternehmen – ohne Grenzen."
   },
   {
-    title: "Wettbewerbsvorteil sichern",
-    description: "Nutzen Sie modernste KI-Technologien und bleiben Sie Ihrer Konkurrenz einen Schritt voraus."
+    title: "Wettbewerbsvorteile sichern",
+    description: "Nutzen Sie moderne KI-Technologien und bleiben Sie Ihrer Konkurrenz einen Schritt voraus."
   },
   {
     title: "24/7 erreichbar bleiben",
-    description: "KI-Telefonassistenten arbeiten ohne Pause – nachts, am Wochenende und bei hohem Anrufaufkommen."
+    description: "KI-Assistenten übernehmen Aufgaben jederzeit – auch nachts, am Wochenende und bei hohem Anfragevolumen."
   }
 ];
 
@@ -34,9 +34,12 @@ export const Benefits = () => {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left Content */}
           <div>
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-10">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
               Warum Unternehmen <span className="text-gradient">mit uns arbeiten</span>
             </h2>
+            <p className="text-xl text-muted-foreground mb-10">
+              Wir schaffen Automatisierungen, die spürbare Ergebnisse liefern.
+            </p>
             
             <div className="space-y-6">
               {benefits.map((benefit, index) => (
