@@ -20,9 +20,9 @@ export const DotGrid = () => {
       <div
         className="absolute inset-0"
         style={{
-          backgroundImage: `radial-gradient(circle, hsl(220 13% 13% / 0.08) 1px, transparent 1px)`,
+          backgroundImage: `radial-gradient(circle, hsl(220 13% 13% / 0.18) 1px, transparent 1px)`,
           backgroundSize: '14px 14px',
-          opacity: 0.6,
+          opacity: 0.8,
         }}
       />
       <div
