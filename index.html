@@ -35,6 +35,100 @@
     Cal("init", "kubrix", {origin:"https://cal.com"});
     Cal.ns.kubrix("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
   </script>
+
+  <!-- Silktide Cookie Banner – Stylesheet -->
+  <link
+    rel="stylesheet"
+    id="silktide-consent-manager-css"
+    href="https://kubrix.de/cookie-banner/silktide-consent-manager.css"
+  />
+
+  <!-- Silktide Cookie Banner – Script -->
+  <script src="https://kubrix.de/cookie-banner/silktide-consent-manager.js"></script>
+
+  <script>
+    silktideCookieBannerManager.updateCookieBannerConfig({
+      // dunkler Hintergrund, bis Entscheidung getroffen wurde
+      background: {
+        showBackground: true,
+      },
+
+      // Position von Banner und Icon
+      position: {
+        banner: "bottomRight",
+      },
+      cookieIcon: {
+        position: "bottomRight",
+      },
+
+      // Cookie-Kategorien
+      cookieTypes: [
+        {
+          id: "necessary",
+          name: "Unbedingt erforderliche Cookies",
+          description:
+            "<p>Diese Cookies sind f&uuml;r den Betrieb unserer Website technisch notwendig und k&ouml;nnen nicht deaktiviert werden. Sie stellen grundlegende Funktionen wie Seitennavigation, Sicherheit und Speicherung Ihrer Datenschutzeinstellungen sicher.</p>",
+          required: true,
+          defaultValue: true,
+        },
+        {
+          id: "analytics",
+          name: "Statistik &amp; Analyse",
+          description:
+            "<p>Diese Cookies helfen uns zu verstehen, wie Besucher unsere Website nutzen, welche Seiten besonders h&auml;ufig besucht werden und wie sich Nutzer durch die Seite bewegen. Die gesammelten Informationen werden anonym ausgewertet.</p>",
+          required: false,
+          defaultValue: false,
+          // verkn&uuml;pft diese Kategorie mit Google Consent Mode (Analytics)
+          gtagConsent: "analytics",
+        },
+        {
+          id: "google_fonts",
+          name: "Google Fonts",
+          description:
+            "<p>Diese Dienste laden externe Schriftarten von Google-Servern. Dabei kann Ihre IP-Adresse in die USA &uuml;bertragen werden. Die Fonts werden erst nach Ihrer Einwilligung geladen.</p>",
+          required: false,
+          defaultValue: false,
+        },
+      ],
+
+      // Texte f&uuml;r Banner & Einstellungs-Modal
+      text: {
+        banner: {
+          description:
+            "<p>Wir verwenden Cookies, um unsere Website zu betreiben, Inhalte zu verbessern und die Nutzung anonym zu analysieren. Sie k&ouml;nnen selbst entscheiden, welche Kategorien Sie zulassen m&ouml;chten. Weitere Informationen finden Sie in unserer Datenschutzerkl&auml;rung.</p>",
+          acceptAllButtonText: "Alle akzeptieren",
+          acceptAllButtonAccessibleLabel: "Alle Cookies akzeptieren",
+          rejectNonEssentialButtonText: "Nur notwendige Cookies verwenden",
+          rejectNonEssentialButtonAccessibleLabel:
+            "Nur notwendige Cookies akzeptieren",
+          preferencesButtonText: "Einstellungen",
+          preferencesButtonAccessibleLabel: "Cookie-Einstellungen &ouml;ffnen",
+        },
+        preferences: {
+          title: "Cookie-Einstellungen",
+          description:
+            "<p>Wir respektieren Ihre Privatsph&auml;re. Hier k&ouml;nnen Sie detailliert ausw&auml;hlen, welche Arten von Cookies wir verwenden d&uuml;rfen. Sie k&ouml;nnen Ihre Auswahl jederzeit &auml;ndern oder widerrufen. Ihre Einstellungen gelten f&uuml;r diese Website.</p>",
+          creditLinkText: "Cookie-Banner von Silktide",
+          creditLinkAccessibleLabel: "Cookie-Banner von Silktide",
+        },
+      },
+    });
+  </script>
+
+  <!-- Google Analytics 4 mit Consent Mode (vereinfachtes Beispiel) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+
+    // Standard: erst einmal alles "denied"
+    gtag("consent", "default", {
+      analytics_storage: "denied",
+    });
+
+    gtag("js", new Date());
+    gtag("config", "G-XXXXXXX");
+  </script>
 </head>
 
   <body>
