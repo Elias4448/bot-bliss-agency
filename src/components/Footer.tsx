@@ -13,7 +13,7 @@ export const Footer = () => {
     }
   };
 
-  return <footer className="py-12 px-6 border-t border-border/50 bg-background/15 backdrop-blur-sm">
+  return <footer className="py-12 px-6 border-t border-border/50 bg-background/5 backdrop-blur-sm">
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           {/* Brand */}
