@@ -14,8 +14,8 @@ export const AboutSection = () => {
       <div className="container mx-auto px-4 max-w-4xl">
         <div className="text-center mb-12">
           
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Über Kubrix
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+            Über <span className="text-gradient">Kubrix</span>
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
             Wir helfen Unternehmen, mit KI und Automatisierung spürbar effizienter zu werden – schnell, pragmatisch und messbar.
