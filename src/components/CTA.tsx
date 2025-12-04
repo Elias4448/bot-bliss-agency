@@ -59,16 +59,9 @@ export const CTA = () => {
             </p>
             
             <div className="flex flex-col gap-5 justify-center items-center">
-              <Button 
-                variant="hero" 
-                size="xl" 
-                className="group"
-                data-cal-namespace="kubrix"
-                data-cal-link="eliasbaumgartner/20-minuten-analysegesprach-automatisierungspotenziale-entdecken"
-                data-cal-config='{"layout":"month_view"}'
-              >
+              <Button variant="hero" size="xl" className="group" data-cal-namespace="kubrix" data-cal-link="eliasbaumgartner/20-minuten-analysegesprach-automatisierungspotenziale-entdecken" data-cal-config='{"layout":"month_view"}'>
                 <Calendar className="w-5 h-5" />
-                Kostenloses Erstgespräch vereinbaren
+                Kostenloses Erstgespräch buchen 
               </Button>
 
               {/* Secondary CTA Button */}
