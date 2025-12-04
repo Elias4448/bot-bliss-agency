@@ -1,25 +1,29 @@
 import logoKubrix from "@/assets/kubrix-logo-full.png";
 import { useNavigate, useLocation } from "react-router-dom";
+
 export const Footer = () => {
   const navigate = useNavigate();
   const location = useLocation();
+
   const goToHome = () => {
     if (location.pathname === "/") {
-      window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-      });
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     } else {
       navigate("/");
     }
   };
+
   return <footer className="py-12 px-6 border-t border-border/50 bg-background/5 backdrop-blur-sm">
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           {/* Brand */}
           <div className="md:col-span-2">
             <button onClick={goToHome} className="flex items-center mb-4 hover:opacity-80 transition-opacity">
-              <img src={logoKubrix} alt="Kubrix Logo" className="h-10 w-auto" />
+              <img 
+                src={logoKubrix} 
+                alt="Kubrix Logo" 
+                className="h-10 w-auto"
+              />
             </button>
             <p className="text-muted-foreground max-w-md">
               Ihre Experten für KI-Integration und Prozessautomatisierung. 
@@ -32,7 +36,7 @@ export const Footer = () => {
             <h3 className="font-semibold mb-4">Unternehmen</h3>
             <ul className="space-y-2 text-muted-foreground">
               <li><a href="#" className="hover:text-primary transition-colors">Über uns</a></li>
-              
+              <li><a href="#" className="hover:text-primary transition-colors">Karriere</a></li>
               <li><a href="#" className="hover:text-primary transition-colors">Blog</a></li>
             </ul>
           </div>
@@ -44,10 +48,11 @@ export const Footer = () => {
               <li><a href="/datenschutz" className="hover:text-primary transition-colors">Datenschutz</a></li>
               <li><a href="/agb" className="hover:text-primary transition-colors">AGB</a></li>
               <li>
-                <a href="#" onClick={e => {
-                e.preventDefault();
-                (window as any).SilktideConsent?.show();
-              }} className="hover:text-primary transition-colors">
+                <a 
+                  href="#" 
+                  onClick={(e) => { e.preventDefault(); (window as any).SilktideConsent?.show(); }}
+                  className="hover:text-primary transition-colors"
+                >
                   Cookie-Einstellungen ändern
                 </a>
               </li>
