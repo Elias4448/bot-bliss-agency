@@ -1,34 +1,23 @@
 import { CheckCircle2 } from "lucide-react";
 import founderImage from "@/assets/elias-baumgartner.jpg";
-
-const trustPoints = [
-  {
-    title: "Klare Lösungen statt Komplexität",
-    description: "KI in sofort nutzbare Geschäftsprozesse übersetzen."
-  },
-  {
-    title: "Technische Umsetzung inklusive",
-    description: "Beratung, Entwicklung und Integration aus einer Hand."
-  },
-  {
-    title: "Auf Ergebnisse fokussiert",
-    description: "Messbare Prozessverbesserungen und geringere Kosten."
-  }
-];
-
+const trustPoints = [{
+  title: "Klare Lösungen statt Komplexität",
+  description: "KI in sofort nutzbare Geschäftsprozesse übersetzen."
+}, {
+  title: "Technische Umsetzung inklusive",
+  description: "Beratung, Entwicklung und Integration aus einer Hand."
+}, {
+  title: "Auf Ergebnisse fokussiert",
+  description: "Messbare Prozessverbesserungen und geringere Kosten."
+}];
 export const AboutSection = () => {
-  return (
-    <section className="py-16 md:py-20 relative">
+  return <section className="py-16 md:py-20 relative">
       <div className="container mx-auto px-4 max-w-5xl">
         <div className="grid md:grid-cols-[280px_1fr] gap-8 md:gap-12 items-center">
           {/* Founder Image */}
           <div className="flex flex-col items-center md:items-start">
             <div className="relative w-48 h-48 md:w-56 md:h-56 rounded-2xl overflow-hidden border border-border/30 shadow-lg">
-              <img 
-                src={founderImage} 
-                alt="Elias Baumgartner - Gründer & Geschäftsführer von Kubrix"
-                className="w-full h-full object-cover object-top"
-              />
+              <img alt="Elias Baumgartner - Gründer & Geschäftsführer von Kubrix" className="w-full h-full object-cover object-top" src="/lovable-uploads/3323d78a-ddc2-449c-8377-b9935ffdcac2.png" />
             </div>
             <div className="mt-4 text-center md:text-left">
               <h3 className="font-semibold text-foreground">Elias Baumgartner</h3>
@@ -46,19 +35,16 @@ export const AboutSection = () => {
             </p>
 
             <div className="space-y-3">
-              {trustPoints.map((point, index) => (
-                <div key={index} className="flex items-start gap-3">
+              {trustPoints.map((point, index) => <div key={index} className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                   <div>
                     <span className="font-medium text-foreground">{point.title}:</span>
                     <span className="text-muted-foreground ml-1">{point.description}</span>
                   </div>
-                </div>
-              ))}
+                </div>)}
             </div>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
