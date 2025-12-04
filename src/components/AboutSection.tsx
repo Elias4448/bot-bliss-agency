@@ -1,28 +1,19 @@
 import { CheckCircle2 } from "lucide-react";
-
-const trustPoints = [
-  {
-    title: "Klare Lösungen statt Komplexität",
-    description: "Wir übersetzen KI in sofort nutzbare Geschäftsprozesse."
-  },
-  {
-    title: "Technische Umsetzung inklusive",
-    description: "Beratung, Entwicklung und Integration aus einer Hand."
-  },
-  {
-    title: "Auf Ergebnisse fokussiert",
-    description: "Entlastung der Mitarbeiter, geringere Kosten, messbare Prozessverbesserungen."
-  }
-];
-
+const trustPoints = [{
+  title: "Klare Lösungen statt Komplexität",
+  description: "Wir übersetzen KI in sofort nutzbare Geschäftsprozesse."
+}, {
+  title: "Technische Umsetzung inklusive",
+  description: "Beratung, Entwicklung und Integration aus einer Hand."
+}, {
+  title: "Auf Ergebnisse fokussiert",
+  description: "Entlastung der Mitarbeiter, geringere Kosten, messbare Prozessverbesserungen."
+}];
 export const AboutSection = () => {
-  return (
-    <section className="py-20 md:py-28 relative">
+  return <section className="py-20 md:py-28 relative">
       <div className="container mx-auto px-4 max-w-4xl">
         <div className="text-center mb-12">
-          <span className="text-primary/80 text-sm font-medium tracking-wider uppercase mb-4 block">
-            Über uns
-          </span>
+          
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Über Kubrix
           </h2>
@@ -32,11 +23,7 @@ export const AboutSection = () => {
         </div>
 
         <div className="grid gap-6 md:gap-8">
-          {trustPoints.map((point, index) => (
-            <div 
-              key={index}
-              className="flex items-start gap-4 p-5 rounded-xl bg-card/30 border border-border/30 backdrop-blur-sm"
-            >
+          {trustPoints.map((point, index) => <div key={index} className="flex items-start gap-4 p-5 rounded-xl bg-card/30 border border-border/30 backdrop-blur-sm">
               <div className="flex-shrink-0 mt-0.5">
                 <CheckCircle2 className="w-5 h-5 text-primary" />
               </div>
@@ -48,10 +35,8 @@ export const AboutSection = () => {
                   {point.description}
                 </p>
               </div>
-            </div>
-          ))}
+            </div>)}
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
