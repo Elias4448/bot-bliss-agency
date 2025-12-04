@@ -35,6 +35,9 @@ export const Navigation = () => {
             <a href="#vorteile" className="font-medium hover:text-primary transition-colors text-lg">
               Vorteile
             </a>
+            <a href="/ueber-uns" className="font-medium hover:text-primary transition-colors text-lg">
+              Über uns
+            </a>
             <a href="#kontakt" className="font-medium hover:text-primary transition-colors text-lg">
               Kontakt
             </a>
