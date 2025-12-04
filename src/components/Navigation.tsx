@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Menu } from "lucide-react";
 import { useNavigate, useLocation } from "react-router-dom";
-import logoKubrix from "@/assets/logo-kubrix-lila.png";
+import logoKubrix from "@/assets/kubrix-logo-full.png";
 
 export const Navigation = () => {
   const navigate = useNavigate();
@@ -19,13 +19,12 @@ export const Navigation = () => {
       <div className="max-w-7xl mx-auto">
         <div className="glass border border-white/20 rounded-2xl px-6 py-3 flex items-center justify-between">
           {/* Logo */}
-          <button onClick={goToHome} className="flex items-center gap-0.5 hover:opacity-80 transition-opacity">
+          <button onClick={goToHome} className="flex items-center hover:opacity-80 transition-opacity">
             <img 
               src={logoKubrix} 
               alt="Kubrix Logo" 
-              className="h-8 w-auto sm:h-10"
+              className="h-7 w-auto sm:h-9"
             />
-            <span className="font-bold text-xl hidden sm:inline">Kubrix</span>
           </button>
           
           {/* Desktop Menu */}

@@ -1,4 +1,4 @@
-import logoKubrix from "@/assets/logo-kubrix-lila.png";
+import logoKubrix from "@/assets/kubrix-logo-full.png";
 import { useNavigate, useLocation } from "react-router-dom";
 
 export const Footer = () => {
@@ -18,13 +18,12 @@ export const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           {/* Brand */}
           <div className="md:col-span-2">
-            <button onClick={goToHome} className="flex items-center gap-0.5 mb-4 hover:opacity-80 transition-opacity">
+            <button onClick={goToHome} className="flex items-center mb-4 hover:opacity-80 transition-opacity">
               <img 
                 src={logoKubrix} 
                 alt="Kubrix Logo" 
                 className="h-10 w-auto"
               />
-              <span className="font-bold text-xl">Kubrix</span>
             </button>
             <p className="text-muted-foreground max-w-md">
               Ihre Experten für KI-Integration und Prozessautomatisierung. 
