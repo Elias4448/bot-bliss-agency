@@ -1,42 +1,64 @@
 import { CheckCircle2 } from "lucide-react";
-const trustPoints = [{
-  title: "Klare Lösungen statt Komplexität",
-  description: "Wir übersetzen KI in sofort nutzbare Geschäftsprozesse."
-}, {
-  title: "Technische Umsetzung inklusive",
-  description: "Beratung, Entwicklung und Integration aus einer Hand."
-}, {
-  title: "Auf Ergebnisse fokussiert",
-  description: "Entlastung der Mitarbeiter, geringere Kosten, messbare Prozessverbesserungen."
-}];
-export const AboutSection = () => {
-  return <section className="py-20 md:py-28 relative">
-      <div className="container mx-auto px-4 max-w-4xl">
-        <div className="text-center mb-12">
-          
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-            Über <span className="text-gradient">Kubrix</span>
-          </h2>
-          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
-            Wir helfen Unternehmen, mit KI und Automatisierung spürbar effizienter zu werden – schnell, pragmatisch und messbar.
-          </p>
-        </div>
+import founderImage from "@/assets/elias-baumgartner.jpg";
 
-        <div className="grid gap-6 md:gap-8">
-          {trustPoints.map((point, index) => <div key={index} className="flex items-start gap-4 p-5 rounded-xl bg-card/30 border border-border/30 backdrop-blur-sm">
-              <div className="flex-shrink-0 mt-0.5">
-                <CheckCircle2 className="w-5 h-5 text-primary" />
-              </div>
-              <div>
-                <h3 className="font-semibold text-foreground mb-1">
-                  {point.title}
-                </h3>
-                <p className="text-muted-foreground text-sm md:text-base">
-                  {point.description}
-                </p>
-              </div>
-            </div>)}
+const trustPoints = [
+  {
+    title: "Klare Lösungen statt Komplexität",
+    description: "KI in sofort nutzbare Geschäftsprozesse übersetzen."
+  },
+  {
+    title: "Technische Umsetzung inklusive",
+    description: "Beratung, Entwicklung und Integration aus einer Hand."
+  },
+  {
+    title: "Auf Ergebnisse fokussiert",
+    description: "Messbare Prozessverbesserungen und geringere Kosten."
+  }
+];
+
+export const AboutSection = () => {
+  return (
+    <section className="py-16 md:py-20 relative">
+      <div className="container mx-auto px-4 max-w-5xl">
+        <div className="grid md:grid-cols-[280px_1fr] gap-8 md:gap-12 items-center">
+          {/* Founder Image */}
+          <div className="flex flex-col items-center md:items-start">
+            <div className="relative w-48 h-48 md:w-56 md:h-56 rounded-2xl overflow-hidden border border-border/30 shadow-lg">
+              <img 
+                src={founderImage} 
+                alt="Elias Baumgartner - Gründer & Geschäftsführer von Kubrix"
+                className="w-full h-full object-cover object-top"
+              />
+            </div>
+            <div className="mt-4 text-center md:text-left">
+              <h3 className="font-semibold text-foreground">Elias Baumgartner</h3>
+              <p className="text-sm text-muted-foreground">Gründer & Geschäftsführer</p>
+            </div>
+          </div>
+
+          {/* Content */}
+          <div>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+              Über <span className="text-gradient">Kubrix</span>
+            </h2>
+            <p className="text-muted-foreground mb-6 max-w-xl">
+              Wir helfen Unternehmen, mit KI und Automatisierung spürbar effizienter zu werden – schnell, pragmatisch und messbar.
+            </p>
+
+            <div className="space-y-3">
+              {trustPoints.map((point, index) => (
+                <div key={index} className="flex items-start gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                  <div>
+                    <span className="font-medium text-foreground">{point.title}:</span>
+                    <span className="text-muted-foreground ml-1">{point.description}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
