@@ -1,47 +1,10 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Calendar, X, ArrowRight } from "lucide-react";
+import { Calendar, ArrowRight } from "lucide-react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Label } from "@/components/ui/label";
-import { useToast } from "@/hooks/use-toast";
+import KontaktForm from "./KontaktForm";
 export const CTA = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: ""
-  });
-  const {
-    toast
-  } = useToast();
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!formData.name.trim() || !formData.email.trim()) {
-      toast({
-        title: "Bitte füllen Sie alle Pflichtfelder aus",
-        variant: "destructive"
-      });
-      return;
-    }
-    setIsSubmitting(true);
-
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    toast({
-      title: "Anfrage gesendet!",
-      description: "Wir melden uns schnellstmöglich bei Ihnen."
-    });
-    setFormData({
-      name: "",
-      email: "",
-      message: ""
-    });
-    setIsOpen(false);
-    setIsSubmitting(false);
-  };
   return <section className="py-24 px-6 relative">
       <div className="max-w-4xl mx-auto">
         <div className="glass border border-white/20 rounded-3xl p-12 md:p-16 text-center relative overflow-hidden">
@@ -86,45 +49,7 @@ export const CTA = () => {
               </DialogTitle>
             </DialogHeader>
             
-            <form onSubmit={handleSubmit} className="space-y-4">
-              <div className="space-y-2">
-                <Label htmlFor="name" className="text-sm font-medium text-foreground">
-                  Name <span className="text-destructive">*</span>
-                </Label>
-                <Input id="name" value={formData.name} onChange={e => setFormData({
-                ...formData,
-                name: e.target.value
-              })} placeholder="Ihr Name" className="rounded-xl border-border/50 bg-muted/30 focus:bg-background" required />
-              </div>
-
-              <div className="space-y-2">
-                <Label htmlFor="email" className="text-sm font-medium text-foreground">
-                  E-Mail-Adresse <span className="text-destructive">*</span>
-                </Label>
-                <Input id="email" type="email" value={formData.email} onChange={e => setFormData({
-                ...formData,
-                email: e.target.value
-              })} placeholder="ihre@email.de" className="rounded-xl border-border/50 bg-muted/30 focus:bg-background" required />
-              </div>
-
-              <div className="space-y-2">
-                <Label htmlFor="message" className="text-sm font-medium text-foreground">
-                  Ihre Nachricht / Ihr Anliegen
-                </Label>
-                <Textarea id="message" value={formData.message} onChange={e => setFormData({
-                ...formData,
-                message: e.target.value
-              })} placeholder="Optional: Beschreiben Sie kurz Ihr Anliegen..." rows={4} className="rounded-xl border-border/50 bg-muted/30 focus:bg-background resize-none" />
-              </div>
-
-              <Button type="submit" variant="outline" className="w-full rounded-xl h-12 font-medium" disabled={isSubmitting}>
-                {isSubmitting ? "Wird gesendet..." : "Anfrage senden"}
-              </Button>
-
-              <p className="text-xs text-[#6B6B6B] text-center pt-2">
-                Ihre Daten werden ausschließlich zur Beantwortung Ihrer Anfrage verwendet.
-              </p>
-            </form>
+            <KontaktForm onSubmitted={() => setIsOpen(false)} />
           </div>
         </DialogContent>
       </Dialog>

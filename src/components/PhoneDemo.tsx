@@ -78,8 +78,28 @@ export const PhoneDemo = () => {
   const {
     toast
   } = useToast();
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
+  const webhookUrl = "https://elias88.app.n8n.cloud/webhook/733c8e8b-bc75-4915-ad75-51d3ed71d6b3";
+
+  // Konvertiert eine eingegebene Nummer ins E.164-Format (+49...) und prüft sie.
+  const formatPhoneToE164 = (raw: string) => {
+    const cleaned = raw.replace(/[\s()-]/g, "");
+    if (!cleaned) return null;
+
+    let normalized = cleaned;
+    if (normalized.startsWith("+")) {
+      // Already has country code, keep plus and digits only.
+      normalized = "+" + normalized.slice(1).replace(/\D/g, "");
+    } else if (normalized.startsWith("0")) {
+      normalized = "+49" + normalized.slice(1).replace(/\D/g, "");
+    } else {
+      normalized = "+49" + normalized.replace(/\D/g, "");
+    }
+
+    const e164Pattern = /^\+\d{8,15}$/;
+    return e164Pattern.test(normalized) ? normalized : null;
+  };
+
+  const sendTestCall = async () => {
     if (!phoneNumber.trim()) {
       toast({
         title: "Bitte geben Sie Ihre Telefonnummer ein",
@@ -87,15 +107,60 @@ export const PhoneDemo = () => {
       });
       return;
     }
+
+    const formatted = formatPhoneToE164(phoneNumber.trim());
+    if (!formatted) {
+      toast({
+        title: "Ungültige Telefonnummer",
+        description: "Bitte eine gültige Nummer im Format +49... eingeben.",
+        variant: "destructive"
+      });
+      return;
+    }
+
     setIsLoading(true);
-    setTimeout(() => {
-      setIsLoading(false);
+    try {
+      const response = await fetch(webhookUrl, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          phone: formatted
+        })
+      });
+
+      if (!response.ok) {
+        console.error("Webhook request failed:", response.status, response.statusText);
+        toast({
+          title: "Senden fehlgeschlagen",
+          description: "Bitte versuchen Sie es später erneut.",
+          variant: "destructive"
+        });
+        return;
+      }
+
+      console.log("Webhook request successful");
       toast({
         title: "Testanruf wird eingeleitet",
         description: "Sie erhalten in Kürze einen Anruf von unserem KI-Assistenten."
       });
       setPhoneNumber("");
-    }, 1500);
+    } catch (error) {
+      console.error("Webhook request error:", error);
+      toast({
+        title: "Senden fehlgeschlagen",
+        description: "Bitte versuchen Sie es später erneut.",
+        variant: "destructive"
+      });
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    await sendTestCall();
   };
   return <section className="py-24 px-6 relative overflow-hidden">
       <div className="max-w-2xl mx-auto text-center">

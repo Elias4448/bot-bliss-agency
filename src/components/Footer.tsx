@@ -1,4 +1,4 @@
-import logoKubrix from "@/assets/kubrix-logo-full.png";
+import logoKubrix from "@/assets/kubrix-logo-new.png";
 import { useNavigate, useLocation } from "react-router-dom";
 
 export const Footer = () => {

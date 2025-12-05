@@ -1,0 +1,15 @@
+# Grundeinstellungen
+Options -Indexes
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # Wenn die angeforderte Datei oder der Ordner existiert → normal ausliefern
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+
+  # Alles andere auf index.html umleiten (SPA-Fallback)
+  RewriteRule . /index.html [L]
+</IfModule>
