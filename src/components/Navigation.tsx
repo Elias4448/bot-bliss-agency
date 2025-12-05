@@ -15,6 +15,16 @@ export const Navigation = () => {
     }
   };
 
+  const handleNavClick = (hash: string) => (e: React.MouseEvent) => {
+    e.preventDefault();
+    if (location.pathname === "/") {
+      const element = document.querySelector(hash);
+      element?.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      navigate("/" + hash);
+    }
+  };
+
   return <nav className="fixed top-0 left-0 right-0 z-50 px-6 py-4">
       <div className="max-w-7xl mx-auto">
         <div className="glass border border-white/20 rounded-2xl px-6 py-3 flex items-center justify-between">
@@ -29,16 +39,16 @@ export const Navigation = () => {
           
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-8">
-            <a href="#leistungen" className="font-medium hover:text-primary transition-colors text-lg">
+            <a href="#leistungen" onClick={handleNavClick("#leistungen")} className="font-medium hover:text-primary transition-colors text-lg">
               Leistungen
             </a>
-            <a href="#vorteile" className="font-medium hover:text-primary transition-colors text-lg">
+            <a href="#vorteile" onClick={handleNavClick("#vorteile")} className="font-medium hover:text-primary transition-colors text-lg">
               Vorteile
             </a>
-            <a href="#ueber-uns" className="font-medium hover:text-primary transition-colors text-lg">
+            <a href="#ueber-uns" onClick={handleNavClick("#ueber-uns")} className="font-medium hover:text-primary transition-colors text-lg">
               Über uns
             </a>
-            <a href="#kontakt" className="font-medium hover:text-primary transition-colors text-lg">
+            <a href="#kontakt" onClick={handleNavClick("#kontakt")} className="font-medium hover:text-primary transition-colors text-lg">
               Kontakt
             </a>
           </div>
