@@ -31,7 +31,7 @@ export const AboutSection = () => {
               Über <span className="text-gradient">Kubrix</span>
             </h2>
             <p className="text-muted-foreground mb-6 max-w-xl">
-              Wir helfen Unternehmen, mit KI und Automatisierung spürbar effizienter zu werden – schnell, pragmatisch und messbar.
+              Wir sind Ihr Baustein, mit dem Ihr Unternehmen mit KI und Automatisierung spürbar effizienter wird – schnell, pragmatisch und messbar. Unsere Mission ist es, Unternehmern und Unternehmen dabei zu helfen, mit moderner Technologie Prozesse zu vereinfachen und wettbewerbsfähig zu bleiben.                                      
             </p>
 
             <div className="space-y-3">
