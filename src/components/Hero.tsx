@@ -16,9 +16,7 @@ export const Hero = () => {
         </h1>
         
         {/* Subheading */}
-        <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto animate-in fade-in slide-in-from-bottom-4 duration-700 delay-200">Kubrix ist Ihr fehlender Baustein für effizientere Prozesse.
-
-      </p>
+        <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto animate-in fade-in slide-in-from-bottom-4 duration-700 delay-200">Kubrix ist Ihr fehlender Baustein für effizientere Prozesse. Wir entwickeln KI-Assistenten, die entlasten, beschleunigen und echte Effizienz  schaffen – zuverlässig, messbar und sofort spürbar. </p>
         
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-in fade-in slide-in-from-bottom-4 duration-700 delay-300">
