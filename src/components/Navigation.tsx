@@ -1,11 +1,22 @@
 import { Button } from "@/components/ui/button";
 import { Menu } from "lucide-react";
 import { useNavigate, useLocation } from "react-router-dom";
+import { useEffect } from "react";
 import logoKubrix from "@/assets/kubrix-logo-new.png";
 
 export const Navigation = () => {
   const navigate = useNavigate();
   const location = useLocation();
+
+  // Scroll to hash after navigation
+  useEffect(() => {
+    if (location.pathname === "/" && location.hash) {
+      setTimeout(() => {
+        const element = document.querySelector(location.hash);
+        element?.scrollIntoView({ behavior: 'smooth' });
+      }, 100);
+    }
+  }, [location]);
 
   const goToHome = () => {
     if (location.pathname === "/") {
