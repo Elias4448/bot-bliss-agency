@@ -39,7 +39,8 @@ export const Navigation = () => {
       const element = document.querySelector(hash);
       element?.scrollIntoView({ behavior: 'smooth' });
     } else {
-      navigate("/" + hash);
+      // Use window.location for proper hash navigation from other pages
+      window.location.href = "/" + hash;
     }
   };
 
