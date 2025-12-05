@@ -25,7 +25,7 @@ export const Services = () => {
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
             Unsere <span className="text-gradient">Leistungen</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">Von der Analyse bis zur fertigen KI-Lösung – wir automatisieren Prozesse, die heute noch Zeit kosten.</p>
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">Von der Analyse bis zur fertigen KI-Lösung – wir automatisieren Prozesse.</p>
         </div>
         
         {/* Services Grid */}
