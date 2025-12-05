@@ -44,12 +44,26 @@ export const Footer = () => {
               <li><a href="/datenschutz" className="hover:text-primary transition-colors">Datenschutz</a></li>
               <li><a href="/agb" className="hover:text-primary transition-colors">AGB</a></li>
               <li>
-                <a href="#" onClick={e => {
-                e.preventDefault();
-                (window as any).silktideCookieBannerManager?.showPreferences?.();
-              }} className="hover:text-primary transition-colors cursor-pointer">
+                <button 
+                  onClick={() => {
+                    // Try multiple approaches to open cookie preferences
+                    const cookieIcon = document.querySelector('#silktide-cookie-icon') as HTMLElement;
+                    if (cookieIcon) {
+                      cookieIcon.click();
+                    } else {
+                      // Fallback: try other potential selectors
+                      const silktideBtn = document.querySelector('[id*="silktide"] button, #silktide-wrapper button') as HTMLElement;
+                      if (silktideBtn) {
+                        silktideBtn.click();
+                      } else {
+                        console.log('Silktide cookie icon not found');
+                      }
+                    }
+                  }} 
+                  className="hover:text-primary transition-colors cursor-pointer text-left"
+                >
                   Cookie-Einstellungen ändern
-                </a>
+                </button>
               </li>
             </ul>
           </div>
