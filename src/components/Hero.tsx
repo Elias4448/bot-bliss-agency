@@ -16,7 +16,7 @@ export const Hero = () => {
         </h1>
         
         {/* Subheading */}
-        <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto animate-in fade-in slide-in-from-bottom-4 duration-700 delay-200">Wir sind Ihr fehlender Baustein für effiziente Prozesse. Mit maßgeschneiderten KI-Assistenten und Automatisierungen, helfen wir Ihnen, Anfragen zu beantworten, Prozesse präzise auszuführen und Ihre Mitarbeiter spürbar zu entlasten – gewinnen Sie mit uns Zeit, reduzieren Sie Kosten und steigern Sie die Effizienz.</p>
+        <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto animate-in fade-in slide-in-from-bottom-4 duration-700 delay-200">Wir sind Ihr fehlender Baustein für effizientere Prozesse. Mit maßgeschneiderten KI-Assistenten und Automatisierungen, helfen wir Ihnen, Anfragen zu beantworten, Prozesse präzise auszuführen und Ihre Mitarbeiter spürbar zu entlasten – gewinnen Sie mit uns Zeit, reduzieren Sie Kosten und steigern Sie die Effizienz.</p>
         
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-in fade-in slide-in-from-bottom-4 duration-700 delay-300">
