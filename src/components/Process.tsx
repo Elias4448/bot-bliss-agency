@@ -29,17 +29,35 @@ export const Process = () => {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {steps.map((step, index) => <div key={index} className="group relative">
-              <div className="glass border border-white/20 rounded-2xl p-6 h-full transition-all duration-300 hover:border-primary/50 hover:shadow-lg hover:shadow-primary/10">
-                <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center mb-5 group-hover:from-primary/30 group-hover:to-accent/30 transition-all duration-300">
-                  <step.icon className="w-7 h-7 text-primary" />
+          {steps.map((step, index) => {
+            const isOptional = index === 3;
+            return (
+              <div key={index} className="group relative">
+                <div className={`border rounded-2xl p-6 h-full transition-all duration-300 ${
+                  isOptional 
+                    ? 'bg-white/5 border-white/10 hover:border-white/20' 
+                    : 'glass border-white/20 hover:border-primary/50 hover:shadow-lg hover:shadow-primary/10'
+                }`}>
+                  {isOptional && (
+                    <span className="inline-block px-2 py-0.5 text-xs font-medium rounded-full mb-3" style={{ backgroundColor: '#F3E8FF', color: '#7C3AED' }}>
+                      Optional
+                    </span>
+                  )}
+                  <div className={`w-14 h-14 rounded-xl flex items-center justify-center mb-5 transition-all duration-300 ${
+                    isOptional
+                      ? 'bg-gradient-to-br from-primary/10 to-accent/10'
+                      : 'bg-gradient-to-br from-primary/20 to-accent/20 group-hover:from-primary/30 group-hover:to-accent/30'
+                  }`}>
+                    <step.icon className={`w-7 h-7 ${isOptional ? 'text-primary/60' : 'text-primary'}`} />
+                  </div>
+                  <h3 className={`text-xl font-semibold mb-3 ${isOptional ? 'text-foreground/70' : ''}`}>{step.title}</h3>
+                  <p className={`leading-relaxed ${isOptional ? 'text-muted-foreground/70' : 'text-muted-foreground'}`}>
+                    {step.description}
+                  </p>
                 </div>
-                <h3 className="text-xl font-semibold mb-3">{step.title}</h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  {step.description}
-                </p>
               </div>
-            </div>)}
+            );
+          })}
         </div>
       </div>
     </section>;
