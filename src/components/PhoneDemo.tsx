@@ -84,7 +84,6 @@ export const PhoneDemo = () => {
   const formatPhoneToE164 = (raw: string) => {
     const cleaned = raw.replace(/[\s()-]/g, "");
     if (!cleaned) return null;
-
     let normalized = cleaned;
     if (normalized.startsWith("+")) {
       // Already has country code, keep plus and digits only.
@@ -94,11 +93,9 @@ export const PhoneDemo = () => {
     } else {
       normalized = "+49" + normalized.replace(/\D/g, "");
     }
-
     const e164Pattern = /^\+\d{8,15}$/;
     return e164Pattern.test(normalized) ? normalized : null;
   };
-
   const sendTestCall = async () => {
     if (!phoneNumber.trim()) {
       toast({
@@ -107,7 +104,6 @@ export const PhoneDemo = () => {
       });
       return;
     }
-
     const formatted = formatPhoneToE164(phoneNumber.trim());
     if (!formatted) {
       toast({
@@ -117,7 +113,6 @@ export const PhoneDemo = () => {
       });
       return;
     }
-
     setIsLoading(true);
     try {
       const response = await fetch(webhookUrl, {
@@ -129,7 +124,6 @@ export const PhoneDemo = () => {
           phone: formatted
         })
       });
-
       if (!response.ok) {
         console.error("Webhook request failed:", response.status, response.statusText);
         toast({
@@ -139,7 +133,6 @@ export const PhoneDemo = () => {
         });
         return;
       }
-
       console.log("Webhook request successful");
       toast({
         title: "Testanruf wird eingeleitet",
@@ -157,7 +150,6 @@ export const PhoneDemo = () => {
       setIsLoading(false);
     }
   };
-
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     await sendTestCall();
@@ -168,7 +160,7 @@ export const PhoneDemo = () => {
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 tracking-tight">
           Testen Sie unseren<br /><span className="text-gradient">KI-Telefonassistenten</span>
         </h2>
-        <p className="text-muted-foreground text-lg mb-12">Lust auf ein Praxisbeispiel? Testen Sie jetzt unsere KI in einem Anruf.</p>
+        <p className="text-muted-foreground text-lg mb-12">Lust auf ein Praxisbeispiel? Testen Sie jetzt unsere KI mit einem Anruf.</p>
 
         {/* Animated Orb */}
         
