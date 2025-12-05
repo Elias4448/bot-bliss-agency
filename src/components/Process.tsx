@@ -35,23 +35,23 @@ export const Process = () => {
               <div key={index} className="group relative">
                 <div className={`rounded-2xl p-6 h-full transition-all duration-300 ${
                   isOptional 
-                    ? 'bg-white/[0.03] border border-white/[0.08] hover:border-white/[0.12]' 
+                    ? 'bg-white/10 border border-white/15 hover:border-white/25' 
                     : 'glass border border-white/20 hover:border-primary/50 hover:shadow-lg hover:shadow-primary/10'
                 }`}>
                   {isOptional && (
-                    <span className="absolute top-4 right-4 px-2.5 py-1 text-[10px] font-medium tracking-wide uppercase rounded-full bg-primary/10 text-primary/70 border border-primary/20">
+                    <span className="absolute -top-3 right-4 px-3 py-1 text-[10px] font-semibold tracking-wide uppercase rounded-full bg-primary/15 text-primary/80 border border-primary/25">
                       Optional
                     </span>
                   )}
                   <div className={`w-14 h-14 rounded-xl flex items-center justify-center mb-5 transition-all duration-300 ${
                     isOptional
-                      ? 'bg-gradient-to-br from-primary/5 to-accent/5'
+                      ? 'bg-gradient-to-br from-primary/10 to-accent/10'
                       : 'bg-gradient-to-br from-primary/20 to-accent/20 group-hover:from-primary/30 group-hover:to-accent/30'
                   }`}>
-                    <step.icon className={`w-7 h-7 ${isOptional ? 'text-primary/40' : 'text-primary'}`} />
+                    <step.icon className={`w-7 h-7 ${isOptional ? 'text-primary/60' : 'text-primary'}`} />
                   </div>
-                  <h3 className={`text-xl font-semibold mb-3 ${isOptional ? 'text-foreground/50' : ''}`}>{step.title}</h3>
-                  <p className={`leading-relaxed ${isOptional ? 'text-muted-foreground/50' : 'text-muted-foreground'}`}>
+                  <h3 className={`text-xl font-semibold mb-3 ${isOptional ? 'text-foreground/70' : ''}`}>{step.title}</h3>
+                  <p className={`leading-relaxed ${isOptional ? 'text-muted-foreground/60' : 'text-muted-foreground'}`}>
                     {step.description}
                   </p>
                 </div>
