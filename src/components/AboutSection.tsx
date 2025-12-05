@@ -11,7 +11,7 @@ const trustPoints = [{
   description: "Messbare Prozessverbesserungen und geringere Kosten."
 }];
 export const AboutSection = () => {
-  return <section className="py-16 md:py-20 relative">
+  return <section className="pt-24 pb-16 md:pt-32 md:pb-20 relative">
       <div className="container mx-auto px-4 max-w-5xl">
         <div className="grid md:grid-cols-[280px_1fr] gap-8 md:gap-12 items-center">
           {/* Founder Image */}
