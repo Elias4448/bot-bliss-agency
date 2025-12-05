@@ -45,7 +45,9 @@ export const Footer = () => {
               <li><a href="/agb" className="hover:text-primary transition-colors">AGB</a></li>
               <li>
                 <button 
-                  onClick={() => {
+                  onClick={(e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
                     // Try multiple approaches to open cookie preferences
                     const cookieIcon = document.querySelector('#silktide-cookie-icon') as HTMLElement;
                     if (cookieIcon) {
@@ -55,8 +57,6 @@ export const Footer = () => {
                       const silktideBtn = document.querySelector('[id*="silktide"] button, #silktide-wrapper button') as HTMLElement;
                       if (silktideBtn) {
                         silktideBtn.click();
-                      } else {
-                        console.log('Silktide cookie icon not found');
                       }
                     }
                   }} 
