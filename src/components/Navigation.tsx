@@ -1,12 +1,13 @@
 import { Button } from "@/components/ui/button";
-import { Menu } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useNavigate, useLocation } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import logoKubrix from "@/assets/kubrix-logo-new.png";
 
 export const Navigation = () => {
   const navigate = useNavigate();
   const location = useLocation();
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   // Scroll to hash after navigation
   useEffect(() => {
@@ -16,6 +17,11 @@ export const Navigation = () => {
         element?.scrollIntoView({ behavior: 'smooth' });
       }, 100);
     }
+  }, [location]);
+
+  // Close mobile menu on route change
+  useEffect(() => {
+    setMobileMenuOpen(false);
   }, [location]);
 
   const goToHome = () => {
@@ -28,6 +34,7 @@ export const Navigation = () => {
 
   const handleNavClick = (hash: string) => (e: React.MouseEvent) => {
     e.preventDefault();
+    setMobileMenuOpen(false);
     if (location.pathname === "/") {
       const element = document.querySelector(hash);
       element?.scrollIntoView({ behavior: 'smooth' });
@@ -36,7 +43,8 @@ export const Navigation = () => {
     }
   };
 
-  return <nav className="fixed top-0 left-0 right-0 z-50 px-6 py-4">
+  return (
+    <nav className="fixed top-0 left-0 right-0 z-50 px-6 py-4">
       <div className="max-w-7xl mx-auto">
         <div className="glass border border-white/20 rounded-2xl px-6 py-3 flex items-center justify-between">
           {/* Logo */}
@@ -76,11 +84,63 @@ export const Navigation = () => {
             >
               Jetzt starten
             </Button>
-            <Button variant="ghost" size="icon" className="md:hidden">
-              <Menu className="w-5 h-5" />
+            <Button 
+              variant="ghost" 
+              size="icon" 
+              className="md:hidden"
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            >
+              {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
             </Button>
           </div>
         </div>
+
+        {/* Mobile Menu */}
+        {mobileMenuOpen && (
+          <div className="md:hidden mt-2 glass border border-white/20 rounded-2xl px-6 py-4 animate-in fade-in slide-in-from-top-2 duration-200">
+            <div className="flex flex-col gap-4">
+              <a 
+                href="#leistungen" 
+                onClick={handleNavClick("#leistungen")} 
+                className="font-medium hover:text-primary transition-colors text-lg py-2"
+              >
+                Leistungen
+              </a>
+              <a 
+                href="#vorteile" 
+                onClick={handleNavClick("#vorteile")} 
+                className="font-medium hover:text-primary transition-colors text-lg py-2"
+              >
+                Vorteile
+              </a>
+              <a 
+                href="#ueber-uns" 
+                onClick={handleNavClick("#ueber-uns")} 
+                className="font-medium hover:text-primary transition-colors text-lg py-2"
+              >
+                Über uns
+              </a>
+              <a 
+                href="#kontakt" 
+                onClick={handleNavClick("#kontakt")} 
+                className="font-medium hover:text-primary transition-colors text-lg py-2"
+              >
+                Kontakt
+              </a>
+              <Button 
+                variant="hero" 
+                size="default" 
+                className="w-full mt-2 sm:hidden"
+                data-cal-namespace="kubrix"
+                data-cal-link="eliasbaumgartner/20-minuten-analysegesprach-automatisierungspotenziale-entdecken"
+                data-cal-config='{"layout":"month_view"}'
+              >
+                Jetzt starten
+              </Button>
+            </div>
+          </div>
+        )}
       </div>
-    </nav>;
+    </nav>
+  );
 };
