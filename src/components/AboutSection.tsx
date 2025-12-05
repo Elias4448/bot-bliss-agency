@@ -30,7 +30,7 @@ export const AboutSection = () => {
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
               Über <span className="text-gradient">Kubrix</span>
             </h2>
-            <p className="text-muted-foreground mb-6 max-w-xl">Wir sind Ihr Baustein, mit dem Ihr Unternehmen durch KI und Automatisierung spürbar effizienter wird – schnell, pragmatisch und messbar. Unsere Mission ist es, Unternehmern und Unternehmen dabei zu helfen, mit moderner Technologie Prozesse zu vereinfachen und dem Wettbewerb ein Stück voraus zu sein.</p>
+            <p className="text-muted-foreground mb-6 max-w-xl">Wir sind der Baustein, der Ihr Unternehmen durch KI und Automatisierung spürbar effizienter macht – schnell, pragmatisch und messbar. Unsere Mission: Unternehmern und Unternehmen zu helfen, Prozesse mit moderner Technologie zu vereinfachen und einen klaren Wettbewerbsvorteil zu erzielen.</p>
 
             <div className="space-y-3">
               {trustPoints.map((point, index) => <div key={index} className="flex items-start gap-3">
