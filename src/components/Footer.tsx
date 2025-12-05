@@ -46,8 +46,8 @@ export const Footer = () => {
               <li>
                 <a href="#" onClick={e => {
                 e.preventDefault();
-                (window as any).SilktideConsent?.show();
-              }} className="hover:text-primary transition-colors">
+                (window as any).silktideCookieBannerManager?.showPreferences?.();
+              }} className="hover:text-primary transition-colors cursor-pointer">
                   Cookie-Einstellungen ändern
                 </a>
               </li>
