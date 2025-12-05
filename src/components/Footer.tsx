@@ -48,17 +48,25 @@ export const Footer = () => {
                   onClick={(e) => {
                     e.preventDefault();
                     e.stopPropagation();
-                    // Try multiple approaches to open cookie preferences
+                    
+                    // Save current scroll position
+                    const scrollY = window.scrollY;
+                    
+                    // Try to open cookie preferences
                     const cookieIcon = document.querySelector('#silktide-cookie-icon') as HTMLElement;
                     if (cookieIcon) {
                       cookieIcon.click();
                     } else {
-                      // Fallback: try other potential selectors
                       const silktideBtn = document.querySelector('[id*="silktide"] button, #silktide-wrapper button') as HTMLElement;
                       if (silktideBtn) {
                         silktideBtn.click();
                       }
                     }
+                    
+                    // Restore scroll position after a short delay
+                    setTimeout(() => {
+                      window.scrollTo(0, scrollY);
+                    }, 10);
                   }} 
                   className="hover:text-primary transition-colors cursor-pointer text-left"
                 >
