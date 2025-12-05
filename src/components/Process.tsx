@@ -33,13 +33,13 @@ export const Process = () => {
             const isOptional = index === 3;
             return (
               <div key={index} className="group relative">
-                <div className={`rounded-2xl p-6 h-full transition-all duration-300 ${
+                <div className={`border rounded-2xl p-6 h-full transition-all duration-300 ${
                   isOptional 
-                    ? 'bg-white/10 border border-white/15 hover:border-white/25' 
-                    : 'glass border border-white/20 hover:border-primary/50 hover:shadow-lg hover:shadow-primary/10'
+                    ? 'bg-white/5 border-white/10 hover:border-white/20' 
+                    : 'glass border-white/20 hover:border-primary/50 hover:shadow-lg hover:shadow-primary/10'
                 }`}>
                   {isOptional && (
-                    <span className="absolute -top-3 right-4 px-3 py-1 text-[10px] font-semibold tracking-wide uppercase rounded-full bg-primary/15 text-primary/80 border border-primary/25">
+                    <span className="inline-block px-2 py-0.5 text-xs font-medium rounded-full mb-3" style={{ backgroundColor: '#F3E8FF', color: '#7C3AED' }}>
                       Optional
                     </span>
                   )}
@@ -51,7 +51,7 @@ export const Process = () => {
                     <step.icon className={`w-7 h-7 ${isOptional ? 'text-primary/60' : 'text-primary'}`} />
                   </div>
                   <h3 className={`text-xl font-semibold mb-3 ${isOptional ? 'text-foreground/70' : ''}`}>{step.title}</h3>
-                  <p className={`leading-relaxed ${isOptional ? 'text-muted-foreground/60' : 'text-muted-foreground'}`}>
+                  <p className={`leading-relaxed ${isOptional ? 'text-muted-foreground/70' : 'text-muted-foreground'}`}>
                     {step.description}
                   </p>
                 </div>
