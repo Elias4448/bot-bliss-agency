@@ -17,7 +17,11 @@ export const AboutSection = () => {
           {/* Founder Image */}
           <div className="flex flex-col items-center md:items-start">
             <div className="relative w-48 h-48 md:w-56 md:h-56 rounded-2xl overflow-hidden border border-border/30 shadow-lg">
-              <img alt="Elias Baumgartner - Gründer & Geschäftsführer von Kubrix" className="w-full h-full object-cover object-top" src="/lovable-uploads/3323d78a-ddc2-449c-8377-b9935ffdcac2.png" />
+              <img
+                alt="Elias Baumgartner - Gründer & Geschäftsführer von Kubrix"
+                className="w-full h-full object-cover object-top"
+                src={founderImage}
+              />
             </div>
             <div className="mt-4 text-center md:text-left">
               <h3 className="font-semibold text-foreground">Elias Baumgartner</h3>
