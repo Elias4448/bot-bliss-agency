@@ -1,4 +1,6 @@
-import { MessageSquare, Target, Cog, Headphones } from "lucide-react";
+import { MessageSquare, Target, Cog, Headphones, ArrowRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
+
 const steps = [{
   icon: MessageSquare,
   title: "1. Kostenloses Erstgespräch",
@@ -16,6 +18,7 @@ const steps = [{
   title: "4. Betrieb & Support",
   description: "Auf Wunsch übernehmen wir Hosting, Monitoring und Weiterentwicklung Ihrer KI-Systeme – sicher, zuverlässig und vollständig betreut."
 }];
+
 export const Process = () => {
   return <section className="py-24 px-6">
       <div className="max-w-7xl mx-auto">
@@ -42,6 +45,22 @@ export const Process = () => {
             </div>
           </div>
         ))}
+        </div>
+
+        {/* CTA */}
+        <div className="text-center mt-16">
+          <p className="text-muted-foreground mb-6">Starten Sie mit dem ersten Schritt – unverbindlich und kostenfrei.</p>
+          <Button 
+            variant="hero" 
+            size="lg" 
+            className="group"
+            data-cal-namespace="kubrix"
+            data-cal-link="eliasbaumgartner/20-minuten-analysegesprach-automatisierungspotenziale-entdecken"
+            data-cal-config='{"layout":"month_view"}'
+          >
+            Erstgespräch vereinbaren
+            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+          </Button>
         </div>
       </div>
     </section>;
