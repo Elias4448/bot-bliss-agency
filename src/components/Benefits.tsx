@@ -1,4 +1,5 @@
-import { CheckCircle2 } from "lucide-react";
+import { CheckCircle2, ArrowRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const benefits = [
   {
@@ -57,6 +58,22 @@ export const Benefits = () => {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* CTA */}
+        <div className="text-center mt-16">
+          <p className="text-muted-foreground mb-6">Bereit, diese Vorteile für Ihr Unternehmen zu nutzen?</p>
+          <Button 
+            variant="hero" 
+            size="lg" 
+            className="group"
+            data-cal-namespace="kubrix"
+            data-cal-link="eliasbaumgartner/20-minuten-analysegesprach-automatisierungspotenziale-entdecken"
+            data-cal-config='{"layout":"month_view"}'
+          >
+            Jetzt Potenziale entdecken
+            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+          </Button>
         </div>
       </div>
     </section>

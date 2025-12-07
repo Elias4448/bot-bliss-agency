@@ -1,5 +1,7 @@
-import { Phone, Workflow, Lightbulb, Server } from "lucide-react";
+import { Phone, Workflow, Lightbulb, Server, ArrowRight } from "lucide-react";
 import { Card } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+
 const services = [{
   icon: Lightbulb,
   title: "Beratung, Konzeption & Implementierung",
@@ -17,6 +19,7 @@ const services = [{
   title: "Managed Hosting & Support",
   description: "Wir betreiben, überwachen und erweitern Ihre KI-Systeme – sicher, zuverlässig und vollständig betreut."
 }];
+
 export const Services = () => {
   return <section className="py-24 px-6 relative">
       <div className="max-w-7xl mx-auto">
@@ -39,6 +42,22 @@ export const Services = () => {
               <h3 className="text-xl font-bold mb-3">{service.title}</h3>
               <p className="text-muted-foreground leading-relaxed">{service.description}</p>
             </Card>)}
+        </div>
+
+        {/* CTA */}
+        <div className="text-center mt-16">
+          <p className="text-muted-foreground mb-6">Welche Lösung passt zu Ihrem Unternehmen?</p>
+          <Button 
+            variant="hero" 
+            size="lg" 
+            className="group"
+            data-cal-namespace="kubrix"
+            data-cal-link="eliasbaumgartner/20-minuten-analysegesprach-automatisierungspotenziale-entdecken"
+            data-cal-config='{"layout":"month_view"}'
+          >
+            Unverbindlich beraten lassen
+            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+          </Button>
         </div>
       </div>
     </section>;
